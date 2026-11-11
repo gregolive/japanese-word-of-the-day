@@ -26,8 +26,12 @@ export interface DailyWord {
   glosses?: string[];
   definition_ja?: { segments: Segment[]; source: string };
   sentences: Partial<Record<Tier, Sentence[]>>;
-  /** model is the Claude model id, "jmdict-only" (no AI text) or "sample-data". */
-  generated_by?: { model: string; verified: boolean };
+  /**
+   * model is the Claude model id, "jmdict-only" (no AI text) or "sample-data".
+   * verified: passed the deterministic checks. reviewed: also approved by the review pass
+   * (absent on older records, which were all reviewed; false for hand-supplied content).
+   */
+  generated_by?: { model: string; verified: boolean; reviewed?: boolean };
 }
 
 /** public/data/archive.json is an array of these, newest first. */

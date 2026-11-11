@@ -9,7 +9,7 @@
     "jlpt": "N1",
     "jmdict_id": 1194360
   },
-  "definition_en": "kotatsu; table over an electric heater, with a hanging quilt to retain heat (orig. over a charcoal brazier in a floor well)",
+  "definition_en": "table over an electric heater, with a hanging quilt to retain heat (orig. over a charcoal brazier in a floor well)",
   "sentences": {
     "beginner": [
       {
@@ -19,7 +19,7 @@
           ["食", "た"],
           ["べます。", ""]
         ],
-        "en": "In winter, I eat mandarin oranges at the kotatsu."
+        "en": "In winter, I eat mandarin oranges at the heated table."
       },
       {
         "segments": [
@@ -28,7 +28,7 @@
           ["中", "なか"],
           ["にいます。", ""]
         ],
-        "en": "The cat is inside the kotatsu."
+        "en": "The cat is under the heated table."
       }
     ],
     "intermediate": [
@@ -40,7 +40,7 @@
           ["出", "で"],
           ["られなくなる。", ""]
         ],
-        "en": "Once you get into a kotatsu, it's hard to get out again."
+        "en": "Once you get under a heated table, it's hard to get out again."
       },
       {
         "segments": [
@@ -55,7 +55,7 @@
           ["話", "はなし"],
           ["をする。", ""]
         ],
-        "en": "On cold nights, the whole family sits around the kotatsu and talks."
+        "en": "On cold nights, the whole family sits around the heated table and talks."
       }
     ],
     "advanced": [
@@ -73,7 +73,7 @@
           ["後回", "あとまわ"],
           ["しにしてしまった。", ""]
         ],
-        "en": "Giving in to the comfort of the kotatsu, I put off the cleaning again today."
+        "en": "Giving in to the comfort of the heated table, I put off the cleaning again today."
       },
       {
         "segments": [
@@ -86,7 +86,7 @@
           ["置", "お"],
           ["かれるようになった。", ""]
         ],
-        "en": "Stylish kotatsu designs have become more common lately, and they now appear in Western-style rooms too."
+        "en": "Stylish heated tables have become more common lately, and they now appear in Western-style rooms too."
       }
     ]
   },
@@ -113,6 +113,7 @@
   },
   "generated_by": {
     "model": "claude-opus-5-5",
-    "verified": true
+    "verified": true,
+    "reviewed": false
   }
 }
