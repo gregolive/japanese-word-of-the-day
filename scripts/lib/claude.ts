@@ -52,7 +52,9 @@ Rules for all Japanese text: natural, correct Japanese as a native speaker would
 
 Content rules: no real people, companies or brands; ordinary fictional people (友達, 先生, 母, 田中さん) are fine. Avoid politics, religion, violence, crime, death, illness, alcohol, sexual content and anything else that could upset a learner. Keep the tone friendly and everyday.
 
-Each English translation is natural English that faithfully matches the Japanese.`;
+Each English translation is natural English that faithfully matches the Japanese. No romaji in English either: never write the word (or any Japanese word) in Latin letters, such as "tokonoma" or "kotatsu"; describe it in English instead ("the alcove", "the heated table"). Ordinary English loanwords like sushi or karaoke are fine.
+
+Every sentence uses the word in the meaning you chose (sense), not in a set phrase or compound with a different meaning.`;
 
 const VERIFY_SYSTEM = `You are a native-level Japanese teacher reviewing content written for an English-speaking learner's word-of-the-day website. The learner will trust it completely, so be strict about correctness but do not fail content for mere style preferences.
 

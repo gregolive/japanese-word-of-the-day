@@ -65,8 +65,10 @@ function render(day: DailyWord): void {
   const dictionaryOnly = day.generated_by?.model === 'jmdict-only';
   $('sentences-note').textContent = dictionaryOnly
     ? 'Today’s entry comes straight from the dictionary, without AI-written content.'
-    : verified
-      ? 'AI-generated sentences, checked against dictionary data.'
+    : verified && day.generated_by?.reviewed === false
+      ? 'AI-generated sentences, checked by code against dictionary data, not yet reviewed by a second AI.'
+      : verified
+        ? 'AI-generated sentences, checked against dictionary data.'
       : 'These example sentences have not been checked yet.';
 
   renderMeaning(day);

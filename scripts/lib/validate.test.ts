@@ -76,6 +76,15 @@ describe('validate', () => {
     expect(problems).toContain('beginner sentence 2: must be exactly one sentence');
   });
 
+  it('rejects the romanized headword in English translations', () => {
+    const gen = good();
+    gen.sentences.beginner[1].en = 'I will keep my yakusoku.';
+    expect(validate(gen, yakusoku, tokenizer, ['yakusoku']).problems).toEqual([
+      'beginner sentence 2: English translation uses the romaji "yakusoku" (no romaji allowed); describe it in English',
+    ]);
+    expect(validate(gen, yakusoku, tokenizer).problems).toEqual([]);
+  });
+
   it('rejects blocked words', () => {
     const gen = good();
     gen.sentences.advanced[0].en = 'He will kill time until the promise.';

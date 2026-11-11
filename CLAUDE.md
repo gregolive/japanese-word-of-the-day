@@ -19,6 +19,7 @@ npm test          # Vitest (scripts/**/*.test.ts, src/**/*.test.ts)
 npm run check     # astro check: types for src/ and scripts/
 npm run ingest    # rebuild the word pool (refuses without --force; reorders words!)
 npm run daily -- --date YYYY-MM-DD [--count N] [--dry-run]   # needs ANTHROPIC_API_KEY
+npm run daily -- --content f.json | --revise f.json [--no-review]   # hand-written content; --no-review marks it reviewed:false
 ```
 Node >= 22.18 (`.nvmrc`): scripts are TypeScript run directly by Node (type stripping), so use only erasable syntax (no enums, no parameter properties) and import with `.ts` extensions.
 
