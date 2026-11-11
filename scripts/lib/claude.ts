@@ -22,6 +22,7 @@ const SentenceSchema = z.object({
   en: z.string().describe('A natural, faithful English translation.'),
 });
 const GeneratedSchema = z.object({
+  sense: z.number().int().describe('0-based index into meanings: the meaning your definition and sentences use.'),
   definition_ja: z.string(),
   sentences: z.object({
     beginner: z.array(SentenceSchema),
@@ -45,7 +46,7 @@ const GENERATE_SYSTEM = `You write content for a Japanese word-of-the-day websit
    - beginner: JLPT N5-N4 grammar and vocabulary, polite です/ます style, ${b[0]}-${b[1]} characters.
    - intermediate: JLPT N3-N2 grammar and vocabulary, ${i[0]}-${i[1]} characters.
    - advanced: JLPT N1 level, natural written or formal register with some nuance, ${a[0]}-${a[1]} characters.
-   Every sentence must use the target word, written with the same spelling as the headword (conjugate verbs and adjectives as normal). The word may be harder than the level: build the rest of the sentence at the level's difficulty. Use the word in one of the listed meanings, preferably the first. Each sentence is a single sentence about one clear, everyday situation, ending in 。, ！ or ？, and the two sentences in a level should show different situations.
+   Every sentence must use the target word, written with the same spelling as the headword (conjugate verbs and adjectives as normal). The word may be harder than the level: build the rest of the sentence at the level's difficulty. Use the word in one of the listed meanings, preferably the first, and set sense to that meaning's 0-based index. Avoid a meaning that would need a sensitive topic. Each sentence is a single sentence about one clear, everyday situation, ending in 。, ！ or ？, and the two sentences in a level should show different situations.
 
 Rules for all Japanese text: natural, correct Japanese as a native speaker would write it. Kana and kanji only: no romaji, no Latin letters, no spaces, no readings in brackets. Use kanji where a native writer normally would.
 
@@ -71,7 +72,7 @@ function wordFacts(entry: PoolEntry): string {
       headword: entry.text,
       reading: entry.reading,
       parts_of_speech: entry.pos,
-      meanings: entry.senses.map((glosses) => glosses.join('; ')),
+      meanings: entry.senses.map((glosses, index) => ({ index, meaning: glosses.join('; ') })),
       approx_jlpt_level: entry.jlpt ?? 'unknown',
     },
     null,

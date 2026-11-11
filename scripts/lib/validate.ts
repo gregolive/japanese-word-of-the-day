@@ -34,6 +34,8 @@ export interface GeneratedSentence {
   en: string;
 }
 export interface Generated {
+  /** 0-based index of the JMdict meaning the content uses (shown as the English definition). */
+  sense?: number;
   definition_ja: string;
   sentences: Record<Tier, GeneratedSentence[]>;
 }
@@ -66,6 +68,10 @@ export function checkEnglish(text: string, label: string): string[] {
   return problems;
 }
 
+/** 何 directly followed by kanji (何世代, 何人, 何時): the tokenizer often gives なに where なん is right. */
+const hasAmbiguousNani = (segments: Segment[]) =>
+  segments.some(([text], i) => text.endsWith('何') && /^[\p{Script=Han}]/u.test(segments[i + 1]?.[0] ?? ''));
+
 /** Number of sentences, counted by sentence-ending punctuation. */
 const sentenceCount = (text: string) => (text.match(/[。！？]+/g) ?? []).length + (/[。！？]$/.test(text) ? 0 : 1);
 
@@ -84,6 +90,7 @@ export function validate(gen: Generated, target: Target, tokenizer: Tokenizer): 
   if (def.includes(target.text)) problems.push(`definition_ja: uses the word ${target.text} itself`);
   const definitionSegments = toSegments(tokenizer.tokenize(def));
   if (!allKanjiRead(definitionSegments)) problems.push('definition_ja: has kanji the tokenizer could not read');
+  if (hasAmbiguousNani(definitionSegments)) problems.push("definition_ja: 何 before a kanji word (なに/なん can't be read reliably); rephrase");
 
   const sentences = {} as Record<Tier, CheckedSentence[]>;
   const seen = new Set<string>();
@@ -108,6 +115,7 @@ export function validate(gen: Generated, target: Target, tokenizer: Tokenizer): 
       const segments = toSegments(tokens, target);
       if (segmentsToText(segments) !== ja) problems.push(`${label}: furigana segments do not rebuild the sentence`);
       if (!allKanjiRead(segments)) problems.push(`${label}: has kanji the tokenizer could not read`);
+      if (hasAmbiguousNani(segments)) problems.push(`${label}: 何 before a kanji word (なに/なん can't be read reliably); rephrase`);
       sentences[tier].push({ segments, en: s.en.trim() });
     });
   }

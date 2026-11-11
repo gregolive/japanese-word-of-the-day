@@ -52,6 +52,39 @@ export function findTarget(tokens: Token[], target: Target): [number, number] | 
 }
 
 /**
+ * Words the tokenizer splits or reads wrongly (IPADIC reads 二人 as に+にん, 日本 as にっぽん...).
+ * Matched against 1-2 token windows before the tokenizer's own reading is used.
+ */
+export const READING_OVERRIDES: Record<string, string> = {
+  一人: 'ひとり',
+  二人: 'ふたり',
+  大人: 'おとな',
+  日本: 'にほん',
+  日本人: 'にほんじん',
+  日本語: 'にほんご',
+  今日: 'きょう',
+  明日: 'あした',
+  昨日: 'きのう',
+  今朝: 'けさ',
+  今年: 'ことし',
+  一昨日: 'おととい',
+  上手: 'じょうず',
+  下手: 'へた',
+  眼鏡: 'めがね',
+  果物: 'くだもの',
+};
+
+/** An override starting at token i: the word and how many tokens it covers. */
+function overrideAt(tokens: Token[], i: number): { word: string; length: number } | null {
+  for (const length of [2, 1]) {
+    if (i + length > tokens.length) continue;
+    const word = tokens.slice(i, i + length).map((t) => t.surface_form).join('');
+    if (READING_OVERRIDES[word]) return { word, length };
+  }
+  return null;
+}
+
+/**
  * Furigana segments for a sentence, from the tokenizer's readings.
  * When the target word appears with exactly its headword spelling, JMdict's reading wins
  * (the tokenizer can pick a different reading for homographs, e.g. 今日 こんにち).
@@ -60,6 +93,13 @@ export function toSegments(tokens: Token[], target?: Target): Segment[] {
   const segments: Segment[] = [];
   const span = target ? findTarget(tokens, target) : null;
   for (let i = 0; i < tokens.length; i++) {
+    const override = overrideAt(tokens, i);
+    const overlapsTarget = span && override && i < span[1] && i + override.length > span[0];
+    if (override && !overlapsTarget) {
+      segments.push(...splitFurigana(override.word, READING_OVERRIDES[override.word]));
+      i += override.length - 1;
+      continue;
+    }
     if (span && i === span[0]) {
       const surface = tokens.slice(span[0], span[1]).map((t) => t.surface_form).join('');
       if (surface === target!.text) {

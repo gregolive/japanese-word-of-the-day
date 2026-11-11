@@ -105,3 +105,20 @@ describe('target matching and furigana', () => {
     expect(segments[0]).toEqual(['今日', 'きょう']);
   });
 });
+
+describe('reading fixes the tokenizer gets wrong', () => {
+  it('reads 二人, 一人 and 日本 the standard way', () => {
+    const segments = toSegments(tokenizer.tokenize('二人は日本に来たが、一人は先に帰った。'));
+    expect(segments).toContainEqual(['二人', 'ふたり']);
+    expect(segments).toContainEqual(['日本', 'にほん']);
+    expect(segments).toContainEqual(['一人', 'ひとり']);
+  });
+
+  it('rejects 何 before a kanji word, where なに/なん is unreliable', () => {
+    const gen = good();
+    gen.sentences.advanced[0].ja = '約束は何世代にもわたって守られてきた。';
+    expect(validate(gen, yakusoku, tokenizer).problems).toContain(
+      "advanced sentence 1: 何 before a kanji word (なに/なん can't be read reliably); rephrase",
+    );
+  });
+});
