@@ -1,0 +1,106 @@
+name: Daily word
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # 04:00 UTC; publishes for UTC date + 2
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'First date to publish (YYYY-MM-DD). Empty = UTC today + 2.'
+        required: false
+        default: ''
+      count:
+        description: 'Number of consecutive days to publish (1-31), for backfilling.'
+        required: false
+        default: '1'
+      dry_run:
+        description: 'Generate and check only; print the result, commit nothing.'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # commit the day's data
+  actions: write # start the Pages deploy (pushes made with GITHUB_TOKEN don't trigger workflows)
+  issues: write # report failures
+
+concurrency:
+  group: daily-word
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Generate the word
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          CLAUDE_VERIFY_MODEL: ${{ vars.CLAUDE_VERIFY_MODEL }}
+          DATE: ${{ inputs.date }}
+          COUNT: ${{ inputs.count }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=(--count "${COUNT:-1}")
+          if [ -n "$DATE" ]; then args+=(--date "$DATE"); fi
+          if [ "$DRY_RUN" = "true" ]; then args+=(--dry-run); fi
+          node scripts/daily.ts "${args[@]}"
+
+      - name: Commit and push
+        id: commit
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data state
+          if git diff --cached --quiet; then
+            # Nothing new. Scheduled workflows are disabled after ~60 days without repo activity,
+            # so make an empty keep-alive commit if the last commit is 45+ days old.
+            age_days=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+            if [ "$age_days" -lt 45 ]; then
+              echo "No changes to commit."
+              exit 0
+            fi
+            git commit --allow-empty -m "chore: keep-alive for the daily schedule"
+          else
+            dates=$(git diff --cached --name-only -- public/data/daily | sed -n 's#.*/\([0-9-]*\)\.json#\1#p' | paste -sd ' ' -)
+            git commit -m "data: word of the day ${dates:-update}"
+          fi
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy the site
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
+
+      - name: Report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Daily word job failed"
+          body="The daily word workflow failed: $RUN_URL"
+          number=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body
+
+          The site publishes two days ahead, so there is time to fix it and re-run the workflow (Actions → Daily word → Run workflow) before visitors notice."
+          fi

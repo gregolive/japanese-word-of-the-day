@@ -15,8 +15,12 @@ npm install
 npm run dev       # http://localhost:4321/japanese-word-of-the-day/
 npm run build     # static output in dist/
 npm run preview
+npm test          # Vitest (scripts/**/*.test.ts, src/**/*.test.ts)
+npm run check     # astro check: types for src/ and scripts/
+npm run ingest    # rebuild the word pool (refuses without --force; reorders words!)
+npm run daily -- --date YYYY-MM-DD [--count N] [--dry-run]   # needs ANTHROPIC_API_KEY
 ```
-Node >= 20.3 (22 preferred). No test runner yet; add one (Vitest) when the first script with logic lands.
+Node >= 22.18 (`.nvmrc`): scripts are TypeScript run directly by Node (type stripping), so use only erasable syntax (no enums, no parameter properties) and import with `.ts` extensions.
 
 ## Stack and layout
 - Astro ^5 (pinned: Astro 6 + `@tailwindcss/vite` had a build failure), TypeScript strict, Tailwind v4 via `@tailwindcss/vite`.
@@ -30,9 +34,9 @@ src/layouts/      Base.astro
 src/scripts/      word-page.ts, archive-page.ts   (client DOM rendering)
 src/lib/          types.ts, dates.ts, paths.ts, ui.ts
 public/data/      archive.json, daily/YYYY-MM-DD.json   (the content)
-scripts/          (to add) ingest + daily agent, run by Node in CI
-state/            (to add) used.json, pool data
-.github/workflows deploy.yml (Pages), daily.yml (to add)
+scripts/          ingest.ts (word pool), daily.ts (daily agent); lib/ = pure, tested helpers
+state/            pool.json (shuffled pool, committed), used.json (cursor + history), runs.jsonl (run log)
+.github/workflows deploy.yml (Pages), daily.yml (04:00 UTC cron + manual backfill)
 ```
 
 ## Conventions
@@ -48,7 +52,8 @@ state/            (to add) used.json, pool data
 ## Data rules (important)
 - `public/data/daily/*.json` must conform to `DailyWord` in `src/lib/types.ts`. Change the type and the data together.
 - `public/data/archive.json` is newest-first and must contain exactly one entry per published daily file.
-- Current files are **sample data** (`generated_by.model = "sample-data"`). Never present sample entries as verified. Real entries need `verified: true`.
+- Sample data (`generated_by.model = "sample-data"`) is shown as unverified and is deleted automatically by the first real `daily.ts` run. Real entries need `verified: true`; `generated_by.model = "jmdict-only"` is the no-AI fallback.
+- Pushes made with `GITHUB_TOKEN` don't trigger other workflows, so `daily.yml` starts `deploy.yml` itself with `gh workflow run`.
 - The cron job publishes for **UTC date + 2** so every timezone (up to UTC+14) has its file ahead of time. Do not "simplify" this to today's date.
 - Never publish a Japanese sentence that failed a deterministic check (see PLAN.md, Validation). On repeated failure, fall back to a non-AI pick rather than shipping unchecked text.
 

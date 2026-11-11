@@ -4,7 +4,7 @@ What to build, in order. Context lives in `CLAUDE.md` (conventions) and `DESIGN.
 
 ## Status
 - Done: UI design (approved), Astro + Tailwind scaffold with Today and Archive pages, sample data, README. Builds on Node 22; not yet checked visually or deployed.
-- Not done: everything under Milestones 1 onward.
+- Done (2026-11-11): Milestones 1-3 code (pool, daily script, workflow), tested offline against a mock API. Not yet run against the real API.
 
 ## Product spec (confirmed)
 - One global word per calendar date; each visitor sees the word for their local date. Static site on GitHub Pages, free. No accounts, no backend.
@@ -39,25 +39,25 @@ Publishing **UTC date + 2** guarantees the file exists before UTC+14 reaches tha
 - [ ] Check keyboard use and screen-reader labels on all toggles.
 
 ### 1. Word pool (ingest)
-- [ ] `scripts/ingest.ts`: download latest jmdict-simplified JSON (EDRDG licence), keep learner-appropriate entries (common words, exclude names, obscure/archaic/vulgar tags, katakana-only oddities, very long entries).
-- [ ] Attach approximate JLPT levels from a clearly-licensed community list; mark unknowns as `null` (treated as Intermediate). Record the list's source and licence in the README.
-- [ ] Output `state/pool.json` (ids only is fine) in a seeded shuffled order and an empty `state/used.json` cursor. Deterministic with a fixed seed. Add a unit test.
-- [ ] Keep large raw downloads out of git (gitignored); commit only the compact pool.
+- [x] `scripts/ingest.ts`: download latest jmdict-simplified JSON (EDRDG licence), keep learner-appropriate entries (common words, exclude names, obscure/archaic/vulgar tags, katakana-only oddities, very long entries).
+- [x] Attach approximate JLPT levels from a clearly-licensed community list; mark unknowns as `null` (treated as Intermediate). Record the list's source and licence in the README. **Decided:** the pool keeps only JLPT-listed words by default (6,246 words, ~17 years); 64% of JMdict common words are on no list and are mostly news compounds. `--include-unlisted` brings them back.
+- [x] Output `state/pool.json` (ids only is fine) in a seeded shuffled order and an empty `state/used.json` cursor. Deterministic with a fixed seed. Add a unit test.
+- [x] Keep large raw downloads out of git (gitignored); commit only the compact pool.
 
 ### 2. Daily agent
-- [ ] `scripts/daily.ts` implementing the architecture above. Model configurable via env (default a Haiku-class model; Sonnet-class for verification if needed). Use structured output / tool use so the response is parseable JSON, not free text.
-- [ ] Prompt rules: sentences must naturally contain the target word in a valid form; tier grammar/vocabulary limits; one clear context per sentence; no names of real people, no sensitive topics; English translation per sentence; simple-Japanese definition (<= ~2 short sentences, N4-level vocabulary).
-- [ ] **Validation (deterministic, in code):** tokenizer (e.g. kuromoji or sudachi-based) confirms the target word's lemma appears in each sentence; reading matches JMdict; length limits per tier; no romaji; no disallowed characters; profanity/blocklist; exactly 2 sentences for every included tier; tiers easier than the word's level are skipped. Fail -> retry (max 3) -> fall back to a non-AI pick (JMdict gloss + Tatoeba examples marked as such).
-- [ ] **Verification pass:** a separate Claude call reviews naturalness and correctness and returns pass/fail with reasons; only `verified: true` records are published.
-- [ ] **Furigana in code:** produce `Segment[]` with the tokenizer's readings; for kanji+okurigana split so ruby covers kanji only. Never trust the LLM for readings.
-- [ ] Idempotent: re-running for a date that already has a file does nothing. Log each run (model, tokens, retries, outcome) to `state/runs.jsonl` (keep it small).
-- [ ] Update `public/data/archive.json` (newest first, one entry per file) and `state/used.json` atomically.
+- [x] `scripts/daily.ts` implementing the architecture above. Model configurable via env (default a Haiku-class model; Sonnet-class for verification if needed). Use structured output / tool use so the response is parseable JSON, not free text.
+- [x] Prompt rules: sentences must naturally contain the target word in a valid form; tier grammar/vocabulary limits; one clear context per sentence; no names of real people, no sensitive topics; English translation per sentence; simple-Japanese definition (<= ~2 short sentences, N4-level vocabulary).
+- [x] **Validation (deterministic, in code):** tokenizer (e.g. kuromoji or sudachi-based) confirms the target word's lemma appears in each sentence; reading matches JMdict; length limits per tier; no romaji; no disallowed characters; profanity/blocklist; exactly 2 sentences for every tier (all 3 tiers, always: **decided 2026-11-11, no tier skipping**; a hard word still gets a beginner sentence built from easy grammar around it). Fail -> retry (max 3) -> fall back to a non-AI pick (JMdict gloss + Tatoeba examples marked as such).
+- [x] **Verification pass:** a separate Claude call reviews naturalness and correctness and returns pass/fail with reasons; only `verified: true` records are published.
+- [x] **Furigana in code:** produce `Segment[]` with the tokenizer's readings; for kanji+okurigana split so ruby covers kanji only. Never trust the LLM for readings.
+- [x] Idempotent: re-running for a date that already has a file does nothing. Log each run (model, tokens, retries, outcome) to `state/runs.jsonl` (keep it small).
+- [x] Update `public/data/archive.json` (newest first, one entry per file) and `state/used.json` atomically.
 
 ### 3. Scheduling workflow
-- [ ] `.github/workflows/daily.yml`: `schedule` (cron around 04:00 UTC) plus `workflow_dispatch` with an optional date input. Secret `ANTHROPIC_API_KEY`. Permissions `contents: write`. Commits with the actions bot and pushes to `main`.
-- [ ] Concurrency group so two runs can't overlap.
-- [ ] Failure handling: if the job fails, open/update a GitHub issue (or fail loudly) so the owner notices before the date arrives.
-- [ ] Keep-alive guard against the ~60 day auto-disable of scheduled workflows (data commits normally count; add a fallback keep-alive commit if there has been no commit in 45 days).
+- [x] `.github/workflows/daily.yml`: `schedule` (cron around 04:00 UTC) plus `workflow_dispatch` with an optional date input. Secret `ANTHROPIC_API_KEY`. Permissions `contents: write`. Commits with the actions bot and pushes to `main`.
+- [x] Concurrency group so two runs can't overlap.
+- [x] Failure handling: if the job fails, open/update a GitHub issue (or fail loudly) so the owner notices before the date arrives.
+- [x] Keep-alive guard against the ~60 day auto-disable of scheduled workflows (data commits normally count; add a fallback keep-alive commit if there has been no commit in 45 days).
 - [ ] Backfill a few days of real words (with `workflow_dispatch`) so the archive isn't sample data. Delete the sample files once real ones exist.
 
 ### 4. Audio
@@ -68,13 +68,13 @@ Publishing **UTC date + 2** guarantees the file exists before UTC+14 reaches tha
 - [ ] Open Graph/meta tags (done) and a simple share image (todo); `<noscript>` message (done).
 - [ ] Offline/cached last word (optional, small service worker) if it stays simple.
 - [ ] Lighthouse pass (performance, accessibility).
-- [ ] Unit tests for `dates.ts` (timezone edge cases) and the validation functions.
-- [ ] README: how the agent works, how to run it locally, cost notes, licences.
+- [x] Unit tests for `dates.ts` (timezone edge cases) and the validation functions.
+- [x] README: how the agent works, how to run it locally, cost notes, licences.
 
 ## Open questions for the owner
-- Confirm 3 tiers x 2 sentences (default) and the tier-skipping rule for hard words.
-- Which model tier for generation vs verification once real cost is observed (estimates: Haiku ~$0.07/mo, Sonnet ~$1.45/mo, Opus ~$2.90/mo at ~4k in + 4k out per day).
-- Whether to keep the Google Cloud TTS step (needs a billing-enabled Google account) or stay on browser speech.
+- ~~Tiers~~ **Decided (2026-11-11): 3 tiers x 2 sentences, no tier skipping.**
+- ~~Model tier~~ **Decided (2026-11-11): `claude-haiku-5-5` for both generation and verification for now.** Keep the model configurable via env so it can be raised later once real cost and quality are observed (list-price estimates at ~4k in + 4k out per call: Haiku 5.5 ~$0.07/mo, Sonnet 5.5 ~$1.45/mo, Opus 5.5 ~$2.90/mo, roughly doubled with the verification pass).
+- ~~TTS~~ **Decided (2026-11-11): stay on browser speech (Web Speech API) for now.** Milestone 4 v1.5 (Google Cloud TTS) is deferred.
 - A Japanese speaker should spot-check the first batch of generated entries before launch.
 
 ## Definition of done for v1
