@@ -8,3 +8,13 @@
 {"at":"2026-11-11T18:21:09.241Z","date":"2026-11-11","word":"日の丸","id":1463780,"outcome":"manual","attempts":1,"model":"claude-opus-5-5"}
 {"at":"2026-11-11T18:21:09.250Z","date":"2026-11-12","word":"余計","id":1544090,"outcome":"manual","attempts":1,"model":"claude-opus-5-5"}
 {"at":"2026-11-11T18:21:09.259Z","date":"2026-11-13","word":"こたつ","id":1194360,"outcome":"manual","attempts":1,"model":"claude-opus-5-5"}
+{"at":"2026-11-11T19:31:27.130Z","date":"2026-11-04","word":"靴","id":1246700,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.150Z","date":"2026-11-05","word":"作業","id":1297540,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.162Z","date":"2026-11-06","word":"床の間","id":1349400,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.170Z","date":"2026-11-07","word":"織る","id":1357420,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.180Z","date":"2026-11-08","word":"込める","id":1288790,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.189Z","date":"2026-11-09","word":"双子","id":1398750,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.198Z","date":"2026-11-10","word":"出血","id":1338750,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.207Z","date":"2026-11-11","word":"日の丸","id":1463780,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.216Z","date":"2026-11-12","word":"余計","id":1544090,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-11T19:31:27.224Z","date":"2026-11-13","word":"こたつ","id":1194360,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}

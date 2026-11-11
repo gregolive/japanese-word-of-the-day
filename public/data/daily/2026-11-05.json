@@ -121,6 +121,7 @@
   },
   "generated_by": {
     "model": "claude-opus-5-5",
-    "verified": true
+    "verified": true,
+    "reviewed": false
   }
 }

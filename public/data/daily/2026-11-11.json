@@ -9,7 +9,7 @@
     "jlpt": "N1",
     "jmdict_id": 1463780
   },
-  "definition_en": "national flag of Japan; Japanese flag; Hinomaru",
+  "definition_en": "national flag of Japan; Japanese flag",
   "glosses": [
     "red or gold circle representing the Sun",
     "Japan",
@@ -19,17 +19,18 @@
     "beginner": [
       {
         "segments": [
-          ["母", "はは"],
-          ["が", ""],
+          ["運動会", "うんどうかい"],
+          ["で", ""],
           ["日", "ひ"],
           ["の", ""],
           ["丸", "まる"],
-          ["弁当", "べんとう"],
+          ["の", ""],
+          ["旗", "はた"],
           ["を", ""],
-          ["作", "つく"],
+          ["振", "ふ"],
           ["りました。", ""]
         ],
-        "en": "My mother made a hinomaru bento (rice with a pickled plum in the middle)."
+        "en": "I waved a Japanese flag at the sports day."
       },
       {
         "segments": [
@@ -50,23 +51,20 @@
     "intermediate": [
       {
         "segments": [
-          ["白", "しろ"],
-          ["いご", ""],
-          ["飯", "はん"],
-          ["の", ""],
-          ["真", "ま"],
-          ["ん", ""],
-          ["中", "なか"],
-          ["に", ""],
-          ["梅干", "うめぼ"],
-          ["しをのせると、", ""],
+          ["祝日", "しゅくじつ"],
+          ["には、", ""],
           ["日", "ひ"],
           ["の", ""],
           ["丸", "まる"],
-          ["弁当", "べんとう"],
-          ["になる。", ""]
+          ["を", ""],
+          ["玄関", "げんかん"],
+          ["に", ""],
+          ["掲", "かか"],
+          ["げる", ""],
+          ["家", "いえ"],
+          ["もある。", ""]
         ],
-        "en": "Put a pickled plum in the middle of white rice and you have a hinomaru bento."
+        "en": "On national holidays, some households fly the Japanese flag at their front door."
       },
       {
         "segments": [
@@ -112,19 +110,24 @@
       },
       {
         "segments": [
-          ["質素", "しっそ"],
-          ["な", ""],
+          ["祖父", "そふ"],
+          ["の", ""],
+          ["書斎", "しょさい"],
+          ["には、", ""],
+          ["色", "いろ"],
+          ["あせた", ""],
           ["日", "ひ"],
           ["の", ""],
           ["丸", "まる"],
-          ["弁当", "べんとう"],
-          ["は、かつて", ""],
-          ["節約", "せつやく"],
-          ["の", ""],
-          ["象徴", "しょうちょう"],
-          ["でもあった。", ""]
+          ["が", ""],
+          ["額", "がく"],
+          ["に", ""],
+          ["入", "い"],
+          ["れて", ""],
+          ["飾", "かざ"],
+          ["られていた。", ""]
         ],
-        "en": "The simple hinomaru bento was once also a symbol of thrift."
+        "en": "In my grandfather's study, a faded Japanese flag hung in a frame."
       }
     ]
   },
@@ -151,6 +154,7 @@
   },
   "generated_by": {
     "model": "claude-opus-5-5",
-    "verified": true
+    "verified": true,
+    "reviewed": false
   }
 }
