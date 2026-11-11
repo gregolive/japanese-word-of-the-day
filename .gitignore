@@ -1,0 +1,13 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# local env files (never commit API keys)
+.env
+.env.*
+
+# macOS
+.DS_Store

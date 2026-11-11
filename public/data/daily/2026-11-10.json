@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-10",
+  "word": {
+    "text": "約束",
+    "reading": "やくそく",
+    "pos": ["Noun", "Suru verb"],
+    "jlpt": "N4"
+  },
+  "definition_en": "A promise or arrangement made between people; also a fixed plan, such as meeting someone at an agreed time.",
+  "glosses": ["promise", "agreement", "arrangement", "appointment"],
+  "definition_ja": {
+    "segments": [
+      ["人", "ひと"], ["と", ""], ["人", "ひと"], ["が、これからすることを", ""],
+      ["前", "まえ"], ["もって", ""], ["決", "き"], ["めること。また、その", ""],
+      ["決", "き"], ["めたこと。", ""]
+    ],
+    "source": "ai"
+  },
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [["友達", "ともだち"], ["と", ""], ["会", "あ"], ["う", ""], ["約束", "やくそく"], ["があります。", ""]],
+        "en": "I have plans to meet a friend."
+      },
+      {
+        "segments": [["約束", "やくそく"], ["は", ""], ["守", "まも"], ["ります。", ""]],
+        "en": "I will keep my promise."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [["彼", "かれ"], ["は", ""], ["時間", "じかん"], ["の", ""], ["約束", "やくそく"], ["をきちんと", ""], ["守", "まも"], ["る", ""], ["人", "ひと"], ["だ。", ""]],
+        "en": "He is someone who always keeps to the times he agrees to."
+      },
+      {
+        "segments": [["雨", "あめ"], ["のせいで、", ""], ["友達", "ともだち"], ["との", ""], ["約束", "やくそく"], ["を", ""], ["来週", "らいしゅう"], ["に", ""], ["延", "の"], ["ばした。", ""]],
+        "en": "Because of the rain, I pushed back my plans with a friend to next week."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [["口約束", "くちやくそく"], ["だけでは、", ""], ["後", "あと"], ["で", ""], ["言", "い"], ["った", ""], ["言", "い"], ["わないの", ""], ["争", "あらそ"], ["いになりかねない。", ""]],
+        "en": "A verbal promise alone can easily end in a “he said, she said” dispute."
+      },
+      {
+        "segments": [["彼女", "かのじょ"], ["は", ""], ["一度", "いちど"], ["交", "か"], ["わした", ""], ["約束", "やくそく"], ["は、どんな", ""], ["犠牲", "ぎせい"], ["を", ""], ["払", "はら"], ["ってでも", ""], ["果", "は"], ["たそうとする。", ""]],
+        "en": "Once she has made a promise, she will try to keep it whatever the cost."
+      }
+    ]
+  },
+  "generated_by": { "model": "sample-data", "verified": false }
+}

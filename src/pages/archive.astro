@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { url } from '../lib/paths';
+---
+
+<Base title="Archive · 今日のことば" description="Every past Japanese word of the day.">
+  <Header />
+  <main class="mx-auto flex w-full max-w-[960px] flex-col gap-6 px-5 pb-16 sm:px-12">
+    <a href={url('')} class="text-[15px] font-semibold text-accent hover:underline">‹ Today's word</a>
+    <h1 class="text-3xl font-bold sm:text-4xl">Archive</h1>
+
+    <div class="flex flex-col gap-3">
+      <input
+        id="search"
+        type="search"
+        placeholder="Search words, readings or meanings"
+        aria-label="Search the archive"
+        class="min-h-11 w-full rounded-xl border border-line bg-surface px-4 text-[15px] outline-none focus:border-accent"
+      />
+      <div id="levels" class="flex flex-wrap gap-2" role="group" aria-label="Filter by level"></div>
+    </div>
+
+    <div id="list" class="flex flex-col"></div>
+    <nav id="pager" class="flex items-center justify-between gap-3 text-sm" aria-label="Archive pages"></nav>
+
+    <Footer />
+  </main>
+</Base>
+
+<script>
+  import '../scripts/archive-page';
+</script>

@@ -1,0 +1,74 @@
+---
+import { url } from '../lib/paths';
+
+interface Props {
+  /** Show the ふりがな on/off button (word page only). */
+  furigana?: boolean;
+}
+
+const { furigana = false } = Astro.props;
+---
+
+<header
+  class="mx-auto flex w-full max-w-[960px] flex-wrap items-center justify-between gap-3 px-5 py-5 sm:px-12"
+>
+  <a href={url('')} class="flex items-baseline gap-2.5">
+    <span lang="ja" class="font-serif-jp text-[22px] font-bold">今日のことば</span>
+    <span class="text-[13px] tracking-wide text-muted">Word of the Day</span>
+  </a>
+  <div class="flex items-center gap-2">
+    {
+      furigana && (
+        <button
+          type="button"
+          id="furigana-toggle"
+          aria-pressed="false"
+          class="min-h-10 cursor-pointer rounded-full border border-line bg-surface px-3 text-sm font-semibold text-fg sm:min-h-11 sm:px-4 sm:text-[15px]"
+        >
+          <span lang="ja">ふりがな</span> <span id="furigana-state">Off</span>
+        </button>
+      )
+    }
+    <button
+      type="button"
+      id="theme-toggle"
+      aria-label="Toggle dark mode"
+      aria-pressed="false"
+      class="inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-line bg-surface text-fg sm:size-11"
+    >
+      <!-- moon (shown in light mode) -->
+      <svg
+        class="dark:hidden"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.7 6.7 0 0 0 9.8 9.8z"></path>
+      </svg>
+      <!-- sun (shown in dark mode) -->
+      <svg
+        class="hidden dark:block"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="4"></circle>
+        <path
+          d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+        ></path>
+      </svg>
+    </button>
+  </div>
+</header>

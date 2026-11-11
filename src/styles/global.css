@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Design tokens: light by default, dark when <html class="dark"> */
+:root {
+  --bg: #fbfbfa;
+  --surface: #ffffff;
+  --fg: #1b1b1a;
+  --muted: #5f5f5b;
+  --line: #e6e5e1;
+  --accent: #b93a26;
+  --accent-soft: #fbeae6;
+  --chip: #f1f0ec;
+  --on-accent: #ffffff;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #111214;
+  --surface: #1a1b1e;
+  --fg: #ededeb;
+  --muted: #a3a3a0;
+  --line: #2c2d31;
+  --accent: #f07a62;
+  --accent-soft: #2e1d19;
+  --chip: #232428;
+  --on-accent: #111214;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-chip: var(--chip);
+  --color-on-accent: var(--on-accent);
+  --font-sans: "Inter", "Noto Sans JP", system-ui, sans-serif;
+  --font-jp: "Noto Sans JP", sans-serif;
+  --font-serif-jp: "Noto Serif JP", serif;
+}
+
+/* Furigana: a word with a reading is a button; the reading shows on hover,
+   keyboard focus, tap (data-open) or when the global ふりがな toggle is on. */
+.seg {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dotted var(--muted);
+  border-radius: 2px;
+  padding: 0 1px;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.seg rt {
+  font-size: 0.5em;
+  font-weight: 500;
+  color: var(--accent);
+  visibility: hidden;
+}
+
+.seg:focus-visible,
+.seg[aria-pressed="true"],
+.furigana-all .seg {
+  background: var(--accent-soft);
+}
+
+.seg:focus-visible rt,
+.seg[aria-pressed="true"] rt,
+.furigana-all .seg rt {
+  visibility: visible;
+}
+
+/* Hover only on real pointers: touch browsers keep :hover after a tap,
+   which would stop a second tap from hiding the reading. */
+@media (hover: hover) {
+  .seg:hover {
+    background: var(--accent-soft);
+  }
+  .seg:hover rt {
+    visibility: visible;
+  }
+}
+
+/* Headword: 104px / 144px, shrunk to fit long words on one line.
+   --chars is the character count, set by word-page.ts.
+   Mobile: viewport - 40px padding - 44px speaker - 12px gap. */
+.headword {
+  line-height: 1;
+  font-size: min(104px, calc((100vw - 96px) / var(--chars, 2)));
+}
+@media (width >= 40rem) {
+  /* Desktop: 960px max width - 96px padding - 56px speaker and gap. */
+  .headword {
+    font-size: min(144px, calc((min(100vw, 960px) - 152px) / var(--chars, 2)));
+  }
+}
