@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-04",
+  "word": {
+    "text": "靴",
+    "reading": "くつ",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N5",
+    "jmdict_id": 1246700
+  },
+  "definition_en": "shoe; shoes; boots; footwear",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["新", "あたら"],
+          ["しい", ""],
+          ["靴", "くつ"],
+          ["を", ""],
+          ["買", "か"],
+          ["いました。", ""]
+        ],
+        "en": "I bought new shoes."
+      },
+      {
+        "segments": [
+          ["この", ""],
+          ["靴", "くつ"],
+          ["は", ""],
+          ["少", "すこ"],
+          ["し", ""],
+          ["小", "ちい"],
+          ["さいです。", ""]
+        ],
+        "en": "These shoes are a little small."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["雨", "あめ"],
+          ["の", ""],
+          ["日", "ひ"],
+          ["に", ""],
+          ["履", "は"],
+          ["く", ""],
+          ["靴", "くつ"],
+          ["がほしい。", ""]
+        ],
+        "en": "I want some shoes to wear on rainy days."
+      },
+      {
+        "segments": [
+          ["玄関", "げんかん"],
+          ["で", ""],
+          ["靴", "くつ"],
+          ["を", ""],
+          ["脱", "ぬ"],
+          ["いでから", ""],
+          ["部屋", "へや"],
+          ["に", ""],
+          ["入", "はい"],
+          ["ってください。", ""]
+        ],
+        "en": "Please take off your shoes at the entrance before going into the room."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["履", "は"],
+          ["き", ""],
+          ["慣", "な"],
+          ["れた", ""],
+          ["靴", "くつ"],
+          ["でなければ、", ""],
+          ["長", "なが"],
+          ["い", ""],
+          ["距離", "きょり"],
+          ["を", ""],
+          ["歩", "ある"],
+          ["くのは", ""],
+          ["難", "むずか"],
+          ["しい。", ""]
+        ],
+        "en": "Walking a long way is hard unless your shoes are well worn in."
+      },
+      {
+        "segments": [
+          ["彼", "かれ"],
+          ["は", ""],
+          ["靴", "くつ"],
+          ["の", ""],
+          ["手入", "てい"],
+          ["れを", ""],
+          ["怠", "おこた"],
+          ["らない、", ""],
+          ["几帳面", "きちょうめん"],
+          ["な", ""],
+          ["性格", "せいかく"],
+          ["だ。", ""]
+        ],
+        "en": "He is meticulous and never neglects to take care of his shoes."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["足", "あし"],
+      ["を", ""],
+      ["入", "い"],
+      ["れて、", ""],
+      ["外", "そと"],
+      ["を", ""],
+      ["歩", "ある"],
+      ["くときにはくもの。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-opus-5-5",
+    "verified": true
+  }
+}

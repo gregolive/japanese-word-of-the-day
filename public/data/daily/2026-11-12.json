@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-12",
+  "word": {
+    "text": "余計",
+    "reading": "よけい",
+    "pos": [
+      "Na-adjective"
+    ],
+    "jlpt": "N2",
+    "jmdict_id": 1544090
+  },
+  "definition_en": "extra; more; too much; too many",
+  "glosses": [
+    "unnecessary",
+    "needless",
+    "uncalled-for",
+    "unwanted",
+    "all the more",
+    "even more"
+  ],
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["余計", "よけい"],
+          ["なものは", ""],
+          ["買", "か"],
+          ["いません。", ""]
+        ],
+        "en": "I don't buy things I don't need."
+      },
+      {
+        "segments": [
+          ["お", ""],
+          ["金", "かね"],
+          ["を", ""],
+          ["余計", "よけい"],
+          ["に", ""],
+          ["払", "はら"],
+          ["いました。", ""]
+        ],
+        "en": "I paid more money than I needed to."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["余計", "よけい"],
+          ["なことを", ""],
+          ["言", "い"],
+          ["って、", ""],
+          ["友達", "ともだち"],
+          ["を", ""],
+          ["怒", "おこ"],
+          ["らせてしまった。", ""]
+        ],
+        "en": "I said something I shouldn't have and made my friend angry."
+      },
+      {
+        "segments": [
+          ["心配", "しんぱい"],
+          ["しないでと", ""],
+          ["言", "い"],
+          ["われると、", ""],
+          ["余計", "よけい"],
+          ["に", ""],
+          ["心配", "しんぱい"],
+          ["になる。", ""]
+        ],
+        "en": "Being told not to worry makes me worry all the more."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["親切", "しんせつ"],
+          ["のつもりでも、", ""],
+          ["相手", "あいて"],
+          ["にとっては", ""],
+          ["余計", "よけい"],
+          ["なお", ""],
+          ["世話", "せわ"],
+          ["になることがある。", ""]
+        ],
+        "en": "Even when you mean to be kind, it can come across as unwanted meddling."
+      },
+      {
+        "segments": [
+          ["説明", "せつめい"],
+          ["を", ""],
+          ["加", "くわ"],
+          ["えるほど", ""],
+          ["話", "はなし"],
+          ["が", ""],
+          ["複雑", "ふくざつ"],
+          ["になり、かえって", ""],
+          ["余計", "よけい"],
+          ["な", ""],
+          ["誤解", "ごかい"],
+          ["を", ""],
+          ["招", "まね"],
+          ["いた。", ""]
+        ],
+        "en": "The more I explained, the more complicated it got, and it only caused needless misunderstanding."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["必要", "ひつよう"],
+      ["より", ""],
+      ["多", "おお"],
+      ["いこと。また、なくてもいいこと。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-opus-5-5",
+    "verified": true
+  }
+}

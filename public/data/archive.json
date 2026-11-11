@@ -1,3 +1,72 @@
 [
-  { "date": "2026-11-10", "text": "約束", "reading": "やくそく", "meaning": "promise; appointment", "jlpt": "N4" }
+  {
+    "date": "2026-11-13",
+    "text": "こたつ",
+    "reading": "こたつ",
+    "meaning": "kotatsu; table over an electric heater, with a hanging quilt to retain heat (orig. over a charcoal brazier in a floor well)",
+    "jlpt": "N1"
+  },
+  {
+    "date": "2026-11-12",
+    "text": "余計",
+    "reading": "よけい",
+    "meaning": "extra; more",
+    "jlpt": "N2"
+  },
+  {
+    "date": "2026-11-11",
+    "text": "日の丸",
+    "reading": "ひのまる",
+    "meaning": "national flag of Japan; Japanese flag",
+    "jlpt": "N1"
+  },
+  {
+    "date": "2026-11-10",
+    "text": "出血",
+    "reading": "しゅっけつ",
+    "meaning": "bleeding; haemorrhage",
+    "jlpt": "N1"
+  },
+  {
+    "date": "2026-11-09",
+    "text": "双子",
+    "reading": "ふたご",
+    "meaning": "twins; twin",
+    "jlpt": "N3"
+  },
+  {
+    "date": "2026-11-08",
+    "text": "込める",
+    "reading": "こめる",
+    "meaning": "to put into (e.g. emotion, effort)",
+    "jlpt": "N1"
+  },
+  {
+    "date": "2026-11-07",
+    "text": "織る",
+    "reading": "おる",
+    "meaning": "to weave",
+    "jlpt": "N3"
+  },
+  {
+    "date": "2026-11-06",
+    "text": "床の間",
+    "reading": "とこのま",
+    "meaning": "tokonoma; alcove where art or flowers are displayed",
+    "jlpt": "N2"
+  },
+  {
+    "date": "2026-11-05",
+    "text": "作業",
+    "reading": "さぎょう",
+    "meaning": "work; operation",
+    "jlpt": "N3"
+  },
+  {
+    "date": "2026-11-04",
+    "text": "靴",
+    "reading": "くつ",
+    "meaning": "shoe; shoes",
+    "jlpt": "N5"
+  }
 ]

@@ -1,52 +1,134 @@
 {
   "date": "2026-11-10",
   "word": {
-    "text": "約束",
-    "reading": "やくそく",
+    "text": "出血",
+    "reading": "しゅっけつ",
     "pos": ["Noun", "Suru verb"],
-    "jlpt": "N4"
+    "jlpt": "N1",
+    "jmdict_id": 1338750
   },
-  "definition_en": "A promise or arrangement made between people; also a fixed plan, such as meeting someone at an agreed time.",
-  "glosses": ["promise", "agreement", "arrangement", "appointment"],
-  "definition_ja": {
-    "segments": [
-      ["人", "ひと"], ["と", ""], ["人", "ひと"], ["が、これからすることを", ""],
-      ["前", "まえ"], ["もって", ""], ["決", "き"], ["めること。また、その", ""],
-      ["決", "き"], ["めたこと。", ""]
-    ],
-    "source": "ai"
-  },
+  "definition_en": "bleeding; haemorrhage; hemorrhage; bleed",
+  "glosses": [
+    "bleeding money",
+    "red ink",
+    "selling below cost",
+    "casualties",
+    "losses",
+    "sacrifices"
+  ],
   "sentences": {
     "beginner": [
       {
-        "segments": [["友達", "ともだち"], ["と", ""], ["会", "あ"], ["う", ""], ["約束", "やくそく"], ["があります。", ""]],
-        "en": "I have plans to meet a friend."
+        "segments": [
+          ["指", "ゆび"],
+          ["を", ""],
+          ["切", "き"],
+          ["って、", ""],
+          ["少", "すこ"],
+          ["し", ""],
+          ["出血", "しゅっけつ"],
+          ["しました。", ""]
+        ],
+        "en": "I cut my finger and it bled a little."
       },
       {
-        "segments": [["約束", "やくそく"], ["は", ""], ["守", "まも"], ["ります。", ""]],
-        "en": "I will keep my promise."
+        "segments": [
+          ["出血", "しゅっけつ"],
+          ["はもう", ""],
+          ["止", "と"],
+          ["まりました。", ""]
+        ],
+        "en": "The bleeding has already stopped."
       }
     ],
     "intermediate": [
       {
-        "segments": [["彼", "かれ"], ["は", ""], ["時間", "じかん"], ["の", ""], ["約束", "やくそく"], ["をきちんと", ""], ["守", "まも"], ["る", ""], ["人", "ひと"], ["だ。", ""]],
-        "en": "He is someone who always keeps to the times he agrees to."
+        "segments": [
+          ["傷口", "きずぐち"],
+          ["を", ""],
+          ["押", "お"],
+          ["さえていたら、", ""],
+          ["出血", "しゅっけつ"],
+          ["はすぐに", ""],
+          ["止", "と"],
+          ["まった。", ""]
+        ],
+        "en": "When I pressed on the cut, the bleeding stopped right away."
       },
       {
-        "segments": [["雨", "あめ"], ["のせいで、", ""], ["友達", "ともだち"], ["との", ""], ["約束", "やくそく"], ["を", ""], ["来週", "らいしゅう"], ["に", ""], ["延", "の"], ["ばした。", ""]],
-        "en": "Because of the rain, I pushed back my plans with a friend to next week."
+        "segments": [
+          ["歯", "は"],
+          ["を", ""],
+          ["強", "つよ"],
+          ["く", ""],
+          ["磨", "みが"],
+          ["きすぎると、", ""],
+          ["歯", "は"],
+          ["ぐきから", ""],
+          ["出血", "しゅっけつ"],
+          ["することがある。", ""]
+        ],
+        "en": "If you brush your teeth too hard, your gums can bleed."
       }
     ],
     "advanced": [
       {
-        "segments": [["口約束", "くちやくそく"], ["だけでは、", ""], ["後", "あと"], ["で", ""], ["言", "い"], ["った", ""], ["言", "い"], ["わないの", ""], ["争", "あらそ"], ["いになりかねない。", ""]],
-        "en": "A verbal promise alone can easily end in a “he said, she said” dispute."
+        "segments": [
+          ["閉店", "へいてん"],
+          ["セールでは、", ""],
+          ["出血", "しゅっけつ"],
+          ["覚悟", "かくご"],
+          ["の", ""],
+          ["値下", "ねさ"],
+          ["げが", ""],
+          ["行", "おこな"],
+          ["われた。", ""]
+        ],
+        "en": "At the closing-down sale, prices were slashed even at a loss."
       },
       {
-        "segments": [["彼女", "かのじょ"], ["は", ""], ["一度", "いちど"], ["交", "か"], ["わした", ""], ["約束", "やくそく"], ["は、どんな", ""], ["犠牲", "ぎせい"], ["を", ""], ["払", "はら"], ["ってでも", ""], ["果", "は"], ["たそうとする。", ""]],
-        "en": "Once she has made a promise, she will try to keep it whatever the cost."
+        "segments": [
+          ["新", "あたら"],
+          ["しい", ""],
+          ["客", "きゃく"],
+          ["を", ""],
+          ["呼", "よ"],
+          ["び", ""],
+          ["込", "こ"],
+          ["むため、その", ""],
+          ["店", "みせ"],
+          ["は", ""],
+          ["出血", "しゅっけつ"],
+          ["サービスとも", ""],
+          ["言", "い"],
+          ["える", ""],
+          ["価格", "かかく"],
+          ["で", ""],
+          ["商品", "しょうひん"],
+          ["を", ""],
+          ["売", "う"],
+          ["っている。", ""]
+        ],
+        "en": "To draw in new customers, the shop is selling its goods at what you could call loss-making prices."
       }
     ]
   },
-  "generated_by": { "model": "sample-data", "verified": false }
+  "definition_ja": {
+    "segments": [
+      ["けがなどで、", ""],
+      ["体", "からだ"],
+      ["の", ""],
+      ["中", "なか"],
+      ["から", ""],
+      ["血", "ち"],
+      ["が", ""],
+      ["出", "で"],
+      ["ること。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-opus-5-5",
+    "verified": true
+  }
 }

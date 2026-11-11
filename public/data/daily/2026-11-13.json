@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-13",
+  "word": {
+    "text": "こたつ",
+    "reading": "こたつ",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N1",
+    "jmdict_id": 1194360
+  },
+  "definition_en": "kotatsu; table over an electric heater, with a hanging quilt to retain heat (orig. over a charcoal brazier in a floor well)",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["冬", "ふゆ"],
+          ["はこたつでみかんを", ""],
+          ["食", "た"],
+          ["べます。", ""]
+        ],
+        "en": "In winter, I eat mandarin oranges at the kotatsu."
+      },
+      {
+        "segments": [
+          ["猫", "ねこ"],
+          ["がこたつの", ""],
+          ["中", "なか"],
+          ["にいます。", ""]
+        ],
+        "en": "The cat is inside the kotatsu."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["こたつに", ""],
+          ["入", "はい"],
+          ["ると、なかなか", ""],
+          ["出", "で"],
+          ["られなくなる。", ""]
+        ],
+        "en": "Once you get into a kotatsu, it's hard to get out again."
+      },
+      {
+        "segments": [
+          ["寒", "さむ"],
+          ["い", ""],
+          ["夜", "よる"],
+          ["は、", ""],
+          ["家族", "かぞく"],
+          ["みんなでこたつを", ""],
+          ["囲", "かこ"],
+          ["んで", ""],
+          ["話", "はなし"],
+          ["をする。", ""]
+        ],
+        "en": "On cold nights, the whole family sits around the kotatsu and talks."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["こたつの", ""],
+          ["心地", "ここち"],
+          ["よさに", ""],
+          ["負", "ま"],
+          ["けて、", ""],
+          ["今日", "きょう"],
+          ["も", ""],
+          ["掃除", "そうじ"],
+          ["を", ""],
+          ["後回", "あとまわ"],
+          ["しにしてしまった。", ""]
+        ],
+        "en": "Giving in to the comfort of the kotatsu, I put off the cleaning again today."
+      },
+      {
+        "segments": [
+          ["最近", "さいきん"],
+          ["はおしゃれなデザインのこたつも", ""],
+          ["増", "ふ"],
+          ["え、", ""],
+          ["洋室", "ようしつ"],
+          ["にも", ""],
+          ["置", "お"],
+          ["かれるようになった。", ""]
+        ],
+        "en": "Stylish kotatsu designs have become more common lately, and they now appear in Western-style rooms too."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["低", "ひく"],
+      ["いテーブルの", ""],
+      ["下", "した"],
+      ["に", ""],
+      ["暖", "あたた"],
+      ["かくなる", ""],
+      ["物", "もの"],
+      ["を", ""],
+      ["付", "つ"],
+      ["けて、", ""],
+      ["布団", "ふとん"],
+      ["をかけたもの。", ""],
+      ["冬", "ふゆ"],
+      ["に", ""],
+      ["使", "つか"],
+      ["う。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-opus-5-5",
+    "verified": true
+  }
+}

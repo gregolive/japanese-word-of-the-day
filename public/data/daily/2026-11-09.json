@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-09",
+  "word": {
+    "text": "双子",
+    "reading": "ふたご",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N3",
+    "jmdict_id": 1398750
+  },
+  "definition_en": "twins; twin",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["私", "わたし"],
+          ["の", ""],
+          ["友達", "ともだち"],
+          ["は", ""],
+          ["双子", "ふたご"],
+          ["です。", ""]
+        ],
+        "en": "My friends are twins."
+      },
+      {
+        "segments": [
+          ["双子", "ふたご"],
+          ["の", ""],
+          ["兄弟", "きょうだい"],
+          ["はとても", ""],
+          ["仲", "なか"],
+          ["がいいです。", ""]
+        ],
+        "en": "The twin brothers get along really well."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["双子", "ふたご"],
+          ["なのに、", ""],
+          ["二人", "ふたり"],
+          ["の", ""],
+          ["性格", "せいかく"],
+          ["はまるで", ""],
+          ["違", "ちが"],
+          ["う。", ""]
+        ],
+        "en": "Even though they are twins, their personalities are completely different."
+      },
+      {
+        "segments": [
+          ["声", "こえ"],
+          ["までそっくりで、", ""],
+          ["電話", "でんわ"],
+          ["だと", ""],
+          ["双子", "ふたご"],
+          ["のどちらか", ""],
+          ["分", "わ"],
+          ["からない。", ""]
+        ],
+        "en": "Even their voices are alike, so on the phone I can't tell which twin it is."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["双子", "ふたご"],
+          ["の", ""],
+          ["研究", "けんきゅう"],
+          ["は、", ""],
+          ["遺伝", "いでん"],
+          ["と", ""],
+          ["環境", "かんきょう"],
+          ["の", ""],
+          ["影響", "えいきょう"],
+          ["を", ""],
+          ["知", "し"],
+          ["る", ""],
+          ["手", "て"],
+          ["がかりになる。", ""]
+        ],
+        "en": "Studies of twins offer clues to the influence of genes and environment."
+      },
+      {
+        "segments": [
+          ["双子", "ふたご"],
+          ["だからといって、いつも", ""],
+          ["比", "くら"],
+          ["べられるのは", ""],
+          ["本人", "ほんにん"],
+          ["たちにとって", ""],
+          ["負担", "ふたん"],
+          ["だろう。", ""]
+        ],
+        "en": "Being constantly compared just because they are twins must be a burden for them."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["同", "おな"],
+      ["じお", ""],
+      ["母", "かあ"],
+      ["さんから、", ""],
+      ["一", "いち"],
+      ["度", "ど"],
+      ["に", ""],
+      ["生", "う"],
+      ["まれた", ""],
+      ["二人", "ふたり"],
+      ["の", ""],
+      ["子", "こ"],
+      ["ども。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-opus-5-5",
+    "verified": true
+  }
+}

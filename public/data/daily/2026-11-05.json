@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-05",
+  "word": {
+    "text": "作業",
+    "reading": "さぎょう",
+    "pos": ["Noun", "Suru verb"],
+    "jlpt": "N3",
+    "jmdict_id": 1297540
+  },
+  "definition_en": "work; operation; task",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["今日", "きょう"],
+          ["の", ""],
+          ["作業", "さぎょう"],
+          ["は", ""],
+          ["三", "さん"],
+          ["時", "じ"],
+          ["に", ""],
+          ["終", "お"],
+          ["わります。", ""]
+        ],
+        "en": "Today's work finishes at three o'clock."
+      },
+      {
+        "segments": [
+          ["みんなで", ""],
+          ["庭", "にわ"],
+          ["の", ""],
+          ["作業", "さぎょう"],
+          ["をしました。", ""]
+        ],
+        "en": "We all worked in the garden together."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["パソコンを", ""],
+          ["使", "つか"],
+          ["えば、この", ""],
+          ["作業", "さぎょう"],
+          ["はずっと", ""],
+          ["早", "はや"],
+          ["く", ""],
+          ["終", "お"],
+          ["わる。", ""]
+        ],
+        "en": "If you use a computer, this task will be done much faster."
+      },
+      {
+        "segments": [
+          ["作業", "さぎょう"],
+          ["の", ""],
+          ["途中", "とちゅう"],
+          ["で", ""],
+          ["電話", "でんわ"],
+          ["がかかってきて、", ""],
+          ["集中", "しゅうちゅう"],
+          ["が", ""],
+          ["切", "き"],
+          ["れてしまった。", ""]
+        ],
+        "en": "A phone call came in the middle of the work and broke my concentration."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["単純", "たんじゅん"],
+          ["な", ""],
+          ["作業", "さぎょう"],
+          ["ほど、ミスを", ""],
+          ["防", "ふせ"],
+          ["ぐための", ""],
+          ["確認", "かくにん"],
+          ["が", ""],
+          ["欠", "か"],
+          ["かせない。", ""]
+        ],
+        "en": "The simpler the task, the more essential it is to double-check for mistakes."
+      },
+      {
+        "segments": [
+          ["作業", "さぎょう"],
+          ["効率", "こうりつ"],
+          ["を", ""],
+          ["上", "あ"],
+          ["げるには、まず", ""],
+          ["無駄", "むだ"],
+          ["な", ""],
+          ["手順", "てじゅん"],
+          ["を", ""],
+          ["見直", "みなお"],
+          ["すべきだ。", ""]
+        ],
+        "en": "To work more efficiently, you should first review any unnecessary steps."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["何", "なに"],
+      ["かを", ""],
+      ["作", "つく"],
+      ["ったり", ""],
+      ["直", "なお"],
+      ["したりするために、", ""],
+      ["手", "て"],
+      ["や", ""],
+      ["体", "からだ"],
+      ["を", ""],
+      ["動", "うご"],
+      ["かして", ""],
+      ["仕事", "しごと"],
+      ["をすること。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-opus-5-5",
+    "verified": true
+  }
+}

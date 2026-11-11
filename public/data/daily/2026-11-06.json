@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-06",
+  "word": {
+    "text": "床の間",
+    "reading": "とこのま",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N2",
+    "jmdict_id": 1349400
+  },
+  "definition_en": "tokonoma; alcove where art or flowers are displayed",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["祖母", "そぼ"],
+          ["の", ""],
+          ["家", "いえ"],
+          ["には", ""],
+          ["床", "とこ"],
+          ["の", ""],
+          ["間", "ま"],
+          ["があります。", ""]
+        ],
+        "en": "My grandmother's house has a tokonoma alcove."
+      },
+      {
+        "segments": [
+          ["床", "とこ"],
+          ["の", ""],
+          ["間", "ま"],
+          ["に", ""],
+          ["花", "はな"],
+          ["を", ""],
+          ["飾", "かざ"],
+          ["りました。", ""]
+        ],
+        "en": "I put flowers in the tokonoma."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["床", "とこ"],
+          ["の", ""],
+          ["間", "ま"],
+          ["には", ""],
+          ["季節", "きせつ"],
+          ["に", ""],
+          ["合", "あ"],
+          ["った", ""],
+          ["掛", "か"],
+          ["け", ""],
+          ["軸", "じく"],
+          ["が", ""],
+          ["飾", "かざ"],
+          ["られている。", ""]
+        ],
+        "en": "A hanging scroll suited to the season is displayed in the tokonoma."
+      },
+      {
+        "segments": [
+          ["最近", "さいきん"],
+          ["の", ""],
+          ["家", "いえ"],
+          ["では、", ""],
+          ["床", "とこ"],
+          ["の", ""],
+          ["間", "ま"],
+          ["のある", ""],
+          ["和室", "わしつ"],
+          ["が", ""],
+          ["少", "すく"],
+          ["なくなった。", ""]
+        ],
+        "en": "In modern houses, Japanese-style rooms with a tokonoma have become rare."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["床", "とこ"],
+          ["の", ""],
+          ["間", "ま"],
+          ["を", ""],
+          ["背", "せ"],
+          ["にした", ""],
+          ["席", "せき"],
+          ["は、", ""],
+          ["客", "きゃく"],
+          ["をもてなす", ""],
+          ["上座", "かみざ"],
+          ["とされている。", ""]
+        ],
+        "en": "The seat with its back to the tokonoma is regarded as the place of honour for guests."
+      },
+      {
+        "segments": [
+          ["床", "とこ"],
+          ["の", ""],
+          ["間", "ま"],
+          ["の", ""],
+          ["生", "い"],
+          ["け", ""],
+          ["花", "ばな"],
+          ["一", "ひと"],
+          ["つで、", ""],
+          ["部屋", "へや"],
+          ["の", ""],
+          ["雰囲気", "ふんいき"],
+          ["はがらりと", ""],
+          ["変", "か"],
+          ["わる。", ""]
+        ],
+        "en": "A single flower arrangement in the tokonoma can completely change the feel of a room."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["和室", "わしつ"],
+      ["の", ""],
+      ["奥", "おく"],
+      ["にある、", ""],
+      ["少", "すこ"],
+      ["し", ""],
+      ["高", "たか"],
+      ["くなった", ""],
+      ["場所", "ばしょ"],
+      ["。", ""],
+      ["花", "はな"],
+      ["や", ""],
+      ["絵", "え"],
+      ["をかざる。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-opus-5-5",
+    "verified": true
+  }
+}
