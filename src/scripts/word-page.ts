@@ -62,9 +62,12 @@ function render(day: DailyWord): void {
     const label = day.generated_by?.model === 'sample-data' ? 'Sample data, not verified' : 'Not verified';
     chips.append(el('span', { class: 'rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent', text: label }));
   }
-  $('sentences-note').textContent = verified
-    ? 'AI-generated sentences, checked against dictionary data.'
-    : 'These example sentences have not been checked yet.';
+  const dictionaryOnly = day.generated_by?.model === 'jmdict-only';
+  $('sentences-note').textContent = dictionaryOnly
+    ? 'Today’s entry comes straight from the dictionary, without AI-written content.'
+    : verified
+      ? 'AI-generated sentences, checked against dictionary data.'
+      : 'These example sentences have not been checked yet.';
 
   renderMeaning(day);
   renderSentences(day);

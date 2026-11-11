@@ -19,11 +19,14 @@ export interface DailyWord {
     pos: string[];
     jlpt?: string | null;
     audio?: string;
+    /** JMdict entry id the word came from. */
+    jmdict_id?: number;
   };
   definition_en: string;
   glosses?: string[];
   definition_ja?: { segments: Segment[]; source: string };
   sentences: Partial<Record<Tier, Sentence[]>>;
+  /** model is the Claude model id, "jmdict-only" (no AI text) or "sample-data". */
   generated_by?: { model: string; verified: boolean };
 }
 
