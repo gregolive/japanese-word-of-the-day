@@ -105,7 +105,7 @@ function renderPager(pager: HTMLElement, start: string, end: string, totalPages:
   const button = (label: string, target: number, disabled: boolean) => {
     const b = el('button', {
       class:
-        'min-h-10 cursor-pointer rounded-full border border-line bg-surface px-4 font-semibold disabled:cursor-default disabled:opacity-40 sm:min-h-11',
+        'min-h-10 shrink-0 cursor-pointer whitespace-nowrap rounded-full border border-line bg-surface px-4 font-semibold disabled:cursor-default disabled:opacity-40 sm:min-h-11',
       text: label,
       attrs: { type: 'button' },
     });
