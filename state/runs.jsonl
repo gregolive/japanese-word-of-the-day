@@ -18,3 +18,4 @@
 {"at":"2026-11-11T19:31:27.207Z","date":"2026-11-11","word":"日の丸","id":1463780,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
 {"at":"2026-11-11T19:31:27.216Z","date":"2026-11-12","word":"余計","id":1544090,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
 {"at":"2026-11-11T19:31:27.224Z","date":"2026-11-13","word":"こたつ","id":1194360,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
+{"at":"2026-11-12T04:09:06.770Z","date":"2026-11-14","word":"一緒","id":1163400,"outcome":"ai","attempts":1,"model":"claude-haiku-5-5","verify_model":"claude-haiku-5-5","input_tokens":2935,"output_tokens":2132}
