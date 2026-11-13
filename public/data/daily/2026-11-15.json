@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-15",
+  "word": {
+    "text": "税金",
+    "reading": "ぜいきん",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N3",
+    "jmdict_id": 1382100
+  },
+  "definition_en": "tax; duty",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["毎月", "まいつき"],
+          ["、", ""],
+          ["税金", "ぜいきん"],
+          ["を", ""],
+          ["払", "はら"],
+          ["います。", ""]
+        ],
+        "en": "I pay taxes every month."
+      },
+      {
+        "segments": [
+          ["買", "か"],
+          ["い", ""],
+          ["物", "もの"],
+          ["をすると、", ""],
+          ["税金", "ぜいきん"],
+          ["がかかります。", ""]
+        ],
+        "en": "When you go shopping, tax is added to the price."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["給料", "きゅうりょう"],
+          ["から", ""],
+          ["税金", "ぜいきん"],
+          ["が", ""],
+          ["引", "ひ"],
+          ["かれるので、", ""],
+          ["手取", "てど"],
+          ["りは", ""],
+          ["思", "おも"],
+          ["ったより", ""],
+          ["少", "すく"],
+          ["ない。", ""]
+        ],
+        "en": "Because tax is deducted from my salary, my take-home pay is less than I expected."
+      },
+      {
+        "segments": [
+          ["税金", "ぜいきん"],
+          ["の", ""],
+          ["計算", "けいさん"],
+          ["を", ""],
+          ["間違", "まちが"],
+          ["えないように、", ""],
+          ["領収", "りょうしゅう"],
+          ["書", "しょ"],
+          ["を", ""],
+          ["大切", "たいせつ"],
+          ["に", ""],
+          ["保管", "ほかん"],
+          ["している。", ""]
+        ],
+        "en": "I carefully keep my receipts so that I don't make a mistake when calculating my taxes."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["給与", "きゅうよ"],
+          ["明細", "めいさい"],
+          ["を", ""],
+          ["見", "み"],
+          ["るたびに、", ""],
+          ["天引", "てんび"],
+          ["きされる", ""],
+          ["税金", "ぜいきん"],
+          ["の", ""],
+          ["多", "おお"],
+          ["さに", ""],
+          ["驚", "おどろ"],
+          ["かされる。", ""]
+        ],
+        "en": "Every time I look at my pay slip, I am astonished by the amount of tax deducted from it."
+      },
+      {
+        "segments": [
+          ["住民", "じゅうみん"],
+          ["税", "ぜい"],
+          ["の", ""],
+          ["納付", "のうふ"],
+          ["書", "しょ"],
+          ["が", ""],
+          ["届", "とど"],
+          ["き、", ""],
+          ["一", "いち"],
+          ["年", "ねん"],
+          ["分", "ぶん"],
+          ["の", ""],
+          ["税金", "ぜいきん"],
+          ["の", ""],
+          ["重", "おも"],
+          ["さをあらためて", ""],
+          ["実感", "じっかん"],
+          ["した。", ""]
+        ],
+        "en": "The resident tax payment notice arrived, and I once again felt the weight of a whole year's taxes."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["国", "くに"],
+      ["や", ""],
+      ["市", "し"],
+      ["が、みんなから", ""],
+      ["集", "あつ"],
+      ["めるお", ""],
+      ["金", "かね"],
+      ["です。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
