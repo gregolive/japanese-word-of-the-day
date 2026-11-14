@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-16",
+  "word": {
+    "text": "整数",
+    "reading": "せいすう",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N2",
+    "jmdict_id": 1376190
+  },
+  "definition_en": "integer",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["１、２、３は", ""],
+          ["整数", "せいすう"],
+          ["です。", ""]
+        ],
+        "en": "1, 2, and 3 are integers."
+      },
+      {
+        "segments": [
+          ["マイナス５も", ""],
+          ["整数", "せいすう"],
+          ["です。", ""]
+        ],
+        "en": "Negative 5 is also an integer."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["この", ""],
+          ["問題", "もんだい"],
+          ["では、", ""],
+          ["答", "こた"],
+          ["えを", ""],
+          ["整数", "せいすう"],
+          ["で", ""],
+          ["求", "もと"],
+          ["める", ""],
+          ["必要", "ひつよう"],
+          ["があります。", ""]
+        ],
+        "en": "In this problem, you need to find the answer as an integer."
+      },
+      {
+        "segments": [
+          ["小数点", "しょうすうてん"],
+          ["以下", "いか"],
+          ["を", ""],
+          ["切", "き"],
+          ["り", ""],
+          ["捨", "す"],
+          ["てて、", ""],
+          ["整数", "せいすう"],
+          ["にしてください。", ""]
+        ],
+        "en": "Please drop the decimal part and make it an integer."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["彼女", "かのじょ"],
+          ["は", ""],
+          ["整数", "せいすう"],
+          ["論", "ろん"],
+          ["の", ""],
+          ["入門", "にゅうもん"],
+          ["書", "しょ"],
+          ["を", ""],
+          ["読", "よ"],
+          ["み、", ""],
+          ["数", "かず"],
+          ["の", ""],
+          ["規則", "きそく"],
+          ["性", "せい"],
+          ["に", ""],
+          ["魅了", "みりょう"],
+          ["されたという。", ""]
+        ],
+        "en": "She reportedly read an introductory book on number theory and was fascinated by the regularity of integers."
+      },
+      {
+        "segments": [
+          ["この", ""],
+          ["装置", "そうち"],
+          ["は、", ""],
+          ["測定", "そくてい"],
+          ["値", "ち"],
+          ["を", ""],
+          ["最", "もっと"],
+          ["も", ""],
+          ["近", "ちか"],
+          ["い", ""],
+          ["整数", "せいすう"],
+          ["に", ""],
+          ["丸", "まる"],
+          ["める", ""],
+          ["仕組", "しく"],
+          ["みになっている。", ""]
+        ],
+        "en": "This device is designed to round measured values to the nearest integer."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["０や１、２、マイナス１のような、", ""],
+      ["小数点", "しょうすうてん"],
+      ["がない", ""],
+      ["数", "かず"],
+      ["のことです。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}

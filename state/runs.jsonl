@@ -20,3 +20,4 @@
 {"at":"2026-11-11T19:31:27.224Z","date":"2026-11-13","word":"こたつ","id":1194360,"outcome":"revised","model":"claude-opus-5-5","reviewed":false}
 {"at":"2026-11-12T04:09:06.770Z","date":"2026-11-14","word":"一緒","id":1163400,"outcome":"ai","attempts":1,"model":"claude-haiku-5-5","verify_model":"claude-haiku-5-5","input_tokens":2935,"output_tokens":2132}
 {"at":"2026-11-13T04:09:03.576Z","date":"2026-11-15","word":"税金","id":1382100,"outcome":"ai","attempts":1,"model":"claude-haiku-5-5","verify_model":"claude-haiku-5-5","input_tokens":2794,"output_tokens":2123}
+{"at":"2026-11-14T04:08:44.577Z","date":"2026-11-16","word":"整数","id":1376190,"outcome":"ai","attempts":1,"model":"claude-haiku-5-5","verify_model":"claude-haiku-5-5","input_tokens":2742,"output_tokens":1500}
