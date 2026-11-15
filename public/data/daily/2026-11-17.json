@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-17",
+  "word": {
+    "text": "金融",
+    "reading": "きんゆう",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N3",
+    "jmdict_id": 1243290
+  },
+  "definition_en": "finance; financing; credit transacting; loaning of money",
+  "glosses": [
+    "monetary",
+    "financial",
+    "credit"
+  ],
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["銀行", "ぎんこう"],
+          ["は", ""],
+          ["金融", "きんゆう"],
+          ["の", ""],
+          ["仕事", "しごと"],
+          ["をしています。", ""]
+        ],
+        "en": "The bank does finance work."
+      },
+      {
+        "segments": [
+          ["お", ""],
+          ["金", "かね"],
+          ["の", ""],
+          ["使", "つか"],
+          ["い", ""],
+          ["方", "かた"],
+          ["について、", ""],
+          ["金融", "きんゆう"],
+          ["の", ""],
+          ["本", "ほん"],
+          ["を", ""],
+          ["読", "よ"],
+          ["みました。", ""]
+        ],
+        "en": "I read a book about finance to learn how to use money."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["金融", "きんゆう"],
+          ["機関", "きかん"],
+          ["でお", ""],
+          ["金", "かね"],
+          ["を", ""],
+          ["借", "か"],
+          ["りて、", ""],
+          ["家", "いえ"],
+          ["を", ""],
+          ["買", "か"],
+          ["うことにしました。", ""]
+        ],
+        "en": "I decided to borrow money from a financial institution and buy a house."
+      },
+      {
+        "segments": [
+          ["友達", "ともだち"],
+          ["と、", ""],
+          ["金融", "きんゆう"],
+          ["の", ""],
+          ["仕組", "しく"],
+          ["みについて", ""],
+          ["話", "はな"],
+          ["し", ""],
+          ["合", "あ"],
+          ["いました。", ""]
+        ],
+        "en": "I talked with my friend about how the financial system works."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["低", "てい"],
+          ["金利", "きんり"],
+          ["政策", "せいさく"],
+          ["が", ""],
+          ["長引", "ながび"],
+          ["く", ""],
+          ["中", "なか"],
+          ["、", ""],
+          ["金融", "きんゆう"],
+          ["機関", "きかん"],
+          ["は", ""],
+          ["収益", "しゅうえき"],
+          ["の", ""],
+          ["確保", "かくほ"],
+          ["に", ""],
+          ["苦慮", "くりょ"],
+          ["している。", ""]
+        ],
+        "en": "As low-interest policies continue, financial institutions are struggling to secure profits."
+      },
+      {
+        "segments": [
+          ["デジタル", ""],
+          ["化", "か"],
+          ["の", ""],
+          ["進展", "しんてん"],
+          ["により、", ""],
+          ["金融", "きんゆう"],
+          ["のあり", ""],
+          ["方", "かた"],
+          ["そのものが", ""],
+          ["問", "と"],
+          ["い", ""],
+          ["直", "なお"],
+          ["されている。", ""]
+        ],
+        "en": "With the advance of digitalization, the very nature of finance is being called into question."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["お", ""],
+      ["金", "かね"],
+      ["を", ""],
+      ["借", "か"],
+      ["りたり", ""],
+      ["貸", "か"],
+      ["したり、お", ""],
+      ["金", "かね"],
+      ["を", ""],
+      ["動", "うご"],
+      ["かしたりする", ""],
+      ["仕事", "しごと"],
+      ["のことです。お", ""],
+      ["金", "かね"],
+      ["の", ""],
+      ["流", "なが"],
+      ["れを", ""],
+      ["扱", "あつか"],
+      ["う", ""],
+      ["世界", "せかい"],
+      ["のことでもあります。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
