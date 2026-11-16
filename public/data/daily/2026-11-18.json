@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-18",
+  "word": {
+    "text": "休養",
+    "reading": "きゅうよう",
+    "pos": ["Noun", "Suru verb"],
+    "jlpt": "N2",
+    "jmdict_id": 1228100
+  },
+  "definition_en": "rest; relaxation; recreation; recuperation",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["週末", "しゅうまつ"],
+          ["は", ""],
+          ["家", "いえ"],
+          ["で", ""],
+          ["休養", "きゅうよう"],
+          ["します。", ""]
+        ],
+        "en": "I rest at home on weekends."
+      },
+      {
+        "segments": [
+          ["疲", "つか"],
+          ["れたので、", ""],
+          ["今日", "きょう"],
+          ["は", ""],
+          ["休養", "きゅうよう"],
+          ["します。", ""]
+        ],
+        "en": "I'm tired, so I'll rest today."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["連休", "れんきゅう"],
+          ["中", "ちゅう"],
+          ["は、", ""],
+          ["家", "いえ"],
+          ["でゆっくり", ""],
+          ["休養", "きゅうよう"],
+          ["するつもりです。", ""]
+        ],
+        "en": "I plan to take it easy at home during the long holiday."
+      },
+      {
+        "segments": [
+          ["長", "なが"],
+          ["い", ""],
+          ["旅行", "りょこう"],
+          ["の", ""],
+          ["後", "のち"],
+          ["は、しっかり", ""],
+          ["休養", "きゅうよう"],
+          ["を", ""],
+          ["取", "と"],
+          ["るようにしています。", ""]
+        ],
+        "en": "After a long trip, I make sure to get plenty of rest."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["多忙", "たぼう"],
+          ["な", ""],
+          ["日々", "ひび"],
+          ["の", ""],
+          ["中", "なか"],
+          ["でも、", ""],
+          ["適度", "てきど"],
+          ["な", ""],
+          ["休養", "きゅうよう"],
+          ["を", ""],
+          ["取", "と"],
+          ["ることは", ""],
+          ["作業", "さぎょう"],
+          ["効率", "こうりつ"],
+          ["を", ""],
+          ["保", "たも"],
+          ["つうえで", ""],
+          ["欠", "か"],
+          ["かせない。", ""]
+        ],
+        "en": "Even amid busy days, taking adequate rest is indispensable for maintaining work efficiency."
+      },
+      {
+        "segments": [
+          ["心身", "しんしん"],
+          ["の", ""],
+          ["休養", "きゅうよう"],
+          ["を", ""],
+          ["怠", "おこた"],
+          ["ると、かえって", ""],
+          ["仕事", "しごと"],
+          ["の", ""],
+          ["質", "しつ"],
+          ["が", ""],
+          ["落", "お"],
+          ["ちてしまうものだ。", ""]
+        ],
+        "en": "Neglecting rest for both body and mind only ends up lowering the quality of one's work."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["体", "からだ"],
+      ["や", ""],
+      ["心", "こころ"],
+      ["を", ""],
+      ["休", "やす"],
+      ["ませて、", ""],
+      ["元気", "げんき"],
+      ["を", ""],
+      ["取", "と"],
+      ["り", ""],
+      ["戻", "もど"],
+      ["すことです。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}

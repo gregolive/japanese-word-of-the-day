@@ -22,3 +22,4 @@
 {"at":"2026-11-13T04:09:03.576Z","date":"2026-11-15","word":"税金","id":1382100,"outcome":"ai","attempts":1,"model":"claude-haiku-5-5","verify_model":"claude-haiku-5-5","input_tokens":2794,"output_tokens":2123}
 {"at":"2026-11-14T04:08:44.577Z","date":"2026-11-16","word":"整数","id":1376190,"outcome":"ai","attempts":1,"model":"claude-haiku-5-5","verify_model":"claude-haiku-5-5","input_tokens":2742,"output_tokens":1500}
 {"at":"2026-11-15T04:08:53.244Z","date":"2026-11-17","word":"金融","id":1243290,"outcome":"ai","attempts":1,"model":"claude-haiku-5-5","verify_model":"claude-haiku-5-5","input_tokens":2872,"output_tokens":1956}
+{"at":"2026-11-16T04:10:03.766Z","date":"2026-11-18","word":"休養","id":1228100,"outcome":"ai","attempts":1,"model":"claude-haiku-5-5","verify_model":"claude-haiku-5-5","input_tokens":2821,"output_tokens":1916}
