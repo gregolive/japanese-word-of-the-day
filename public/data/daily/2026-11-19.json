@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-19",
+  "word": {
+    "text": "革命",
+    "reading": "かくめい",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N1",
+    "jmdict_id": 1206500
+  },
+  "definition_en": "revolution",
+  "glosses": [
+    "58th year of the sexagenary cycle (in Onmyōdō)"
+  ],
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["この", ""],
+          ["新", "あたら"],
+          ["しい", ""],
+          ["機械", "きかい"],
+          ["は", ""],
+          ["料理", "りょうり"],
+          ["の", ""],
+          ["革命", "かくめい"],
+          ["です。", ""]
+        ],
+        "en": "This new machine is a revolution in cooking."
+      },
+      {
+        "segments": [
+          ["この", ""],
+          ["本", "ほん"],
+          ["は", ""],
+          ["勉強", "べんきょう"],
+          ["の", ""],
+          ["革命", "かくめい"],
+          ["ですね。", ""]
+        ],
+        "en": "This book is a revolution in studying, isn't it?"
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["電子", "でんし"],
+          ["レンジの", ""],
+          ["登場", "とうじょう"],
+          ["は、", ""],
+          ["家庭", "かてい"],
+          ["の", ""],
+          ["料理", "りょうり"],
+          ["に", ""],
+          ["革命", "かくめい"],
+          ["をもたらした。", ""]
+        ],
+        "en": "The arrival of the microwave oven brought a revolution to home cooking."
+      },
+      {
+        "segments": [
+          ["オンライン", ""],
+          ["授業", "じゅぎょう"],
+          ["は、", ""],
+          ["学", "まな"],
+          ["び", ""],
+          ["方", "かた"],
+          ["に", ""],
+          ["革命", "かくめい"],
+          ["を", ""],
+          ["起", "お"],
+          ["こしつつある。", ""]
+        ],
+        "en": "Online classes are bringing about a revolution in how people learn."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["活版", "かっぱん"],
+          ["印刷", "いんさつ"],
+          ["の", ""],
+          ["普及", "ふきゅう"],
+          ["は、", ""],
+          ["知識", "ちしき"],
+          ["の", ""],
+          ["伝達", "でんたつ"],
+          ["方式", "ほうしき"],
+          ["そのものに", ""],
+          ["革命", "かくめい"],
+          ["をもたらした。", ""]
+        ],
+        "en": "The spread of movable-type printing brought a revolution to the very way knowledge was transmitted."
+      },
+      {
+        "segments": [
+          ["食品", "しょくひん"],
+          ["の", ""],
+          ["保存", "ほぞん"],
+          ["技術", "ぎじゅつ"],
+          ["は、", ""],
+          ["人々", "ひとびと"],
+          ["の", ""],
+          ["食生活", "しょくせいかつ"],
+          ["に", ""],
+          ["革命", "かくめい"],
+          ["を", ""],
+          ["起", "お"],
+          ["こすほどの", ""],
+          ["影響", "えいきょう"],
+          ["を", ""],
+          ["及", "およ"],
+          ["ぼした。", ""]
+        ],
+        "en": "Food preservation technology had such an impact that it sparked a revolution in people's eating habits."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["今", "いま"],
+      ["までのやり", ""],
+      ["方", "かた"],
+      ["や", ""],
+      ["考", "かんが"],
+      ["え", ""],
+      ["方", "かた"],
+      ["が、", ""],
+      ["大", "おお"],
+      ["きく", ""],
+      ["新", "あたら"],
+      ["しく", ""],
+      ["変", "か"],
+      ["わることです。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
