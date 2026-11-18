@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-20",
+  "word": {
+    "text": "風土",
+    "reading": "ふうど",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N1",
+    "jmdict_id": 1500020
+  },
+  "definition_en": "natural features; topography; climate; spiritual features",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["この", ""],
+          ["町", "まち"],
+          ["は", ""],
+          ["風土", "ふうど"],
+          ["がとてもいいです。", ""]
+        ],
+        "en": "This town has a very pleasant natural environment."
+      },
+      {
+        "segments": [
+          ["この", ""],
+          ["国", "くに"],
+          ["の", ""],
+          ["風土", "ふうど"],
+          ["は、", ""],
+          ["私", "わたし"],
+          ["の", ""],
+          ["国", "くに"],
+          ["と", ""],
+          ["少", "すこ"],
+          ["し", ""],
+          ["違", "ちが"],
+          ["います。", ""]
+        ],
+        "en": "The climate and nature of this country are a little different from my country's."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["その", ""],
+          ["地域", "ちいき"],
+          ["の", ""],
+          ["風土", "ふうど"],
+          ["に", ""],
+          ["合", "あ"],
+          ["わせて、", ""],
+          ["農業", "のうぎょう"],
+          ["の", ""],
+          ["方法", "ほうほう"],
+          ["も", ""],
+          ["変", "か"],
+          ["わってきた。", ""]
+        ],
+        "en": "Farming methods in that region have changed to suit its climate and natural features."
+      },
+      {
+        "segments": [
+          ["この", ""],
+          ["料理", "りょうり"],
+          ["は、", ""],
+          ["地元", "じもと"],
+          ["の", ""],
+          ["風土", "ふうど"],
+          ["が", ""],
+          ["生", "う"],
+          ["んだものだと", ""],
+          ["言", "い"],
+          ["われている。", ""]
+        ],
+        "en": "This dish is said to have been born from the local climate and natural environment."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["彼", "かれ"],
+          ["の", ""],
+          ["作品", "さくひん"],
+          ["には、", ""],
+          ["故郷", "こきょう"],
+          ["の", ""],
+          ["風土", "ふうど"],
+          ["に", ""],
+          ["根", "ね"],
+          ["ざした", ""],
+          ["独特", "どくとく"],
+          ["の", ""],
+          ["感性", "かんせい"],
+          ["がにじみ", ""],
+          ["出", "で"],
+          ["ている。", ""]
+        ],
+        "en": "His works exude a distinctive sensibility rooted in the natural landscape of his hometown."
+      },
+      {
+        "segments": [
+          ["長年", "ながねん"],
+          ["その", ""],
+          ["土地", "とち"],
+          ["で", ""],
+          ["暮", "く"],
+          ["らすうちに、", ""],
+          ["人々", "ひとびと"],
+          ["の", ""],
+          ["気質", "きしつ"],
+          ["は", ""],
+          ["風土", "ふうど"],
+          ["の", ""],
+          ["影響", "えいきょう"],
+          ["を", ""],
+          ["色濃", "いろこ"],
+          ["く", ""],
+          ["受", "う"],
+          ["けるようになる。", ""]
+        ],
+        "en": "Over many years of living in the land, people's temperaments come to bear the strong imprint of its natural setting."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["ある", ""],
+      ["土地", "とち"],
+      ["の", ""],
+      ["気候", "きこう"],
+      ["や", ""],
+      ["自然", "しぜん"],
+      ["のことです。その", ""],
+      ["土地", "とち"],
+      ["に", ""],
+      ["住", "す"],
+      ["む", ""],
+      ["人", "ひと"],
+      ["の", ""],
+      ["暮", "く"],
+      ["らしや", ""],
+      ["考", "かんが"],
+      ["え", ""],
+      ["方", "かた"],
+      ["にも", ""],
+      ["関係", "かんけい"],
+      ["します。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
