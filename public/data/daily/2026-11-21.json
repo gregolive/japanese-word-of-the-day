@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-21",
+  "word": {
+    "text": "良好",
+    "reading": "りょうこう",
+    "pos": ["Na-adjective", "Noun"],
+    "jlpt": "N1",
+    "jmdict_id": 1554550
+  },
+  "definition_en": "good; fine; excellent; favorable",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["この", ""],
+          ["機械", "きかい"],
+          ["の", ""],
+          ["調子", "ちょうし"],
+          ["は", ""],
+          ["良好", "りょうこう"],
+          ["です。", ""]
+        ],
+        "en": "This machine is in good working condition."
+      },
+      {
+        "segments": [
+          ["車", "くるま"],
+          ["の", ""],
+          ["調子", "ちょうし"],
+          ["は", ""],
+          ["良好", "りょうこう"],
+          ["です。", ""]
+        ],
+        "en": "The car is running well."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["点検", "てんけん"],
+          ["の", ""],
+          ["結果", "けっか"],
+          ["、", ""],
+          ["機械", "きかい"],
+          ["の", ""],
+          ["状態", "じょうたい"],
+          ["は", ""],
+          ["良好", "りょうこう"],
+          ["と", ""],
+          ["判断", "はんだん"],
+          ["されました。", ""]
+        ],
+        "en": "After the inspection, the machine was judged to be in good condition."
+      },
+      {
+        "segments": [
+          ["引", "ひ"],
+          ["っ", ""],
+          ["越", "こ"],
+          ["し", ""],
+          ["先", "さき"],
+          ["の", ""],
+          ["近所", "きんじょ"],
+          ["の", ""],
+          ["人", "ひと"],
+          ["たちとの", ""],
+          ["関係", "かんけい"],
+          ["は", ""],
+          ["良好", "りょうこう"],
+          ["です。", ""]
+        ],
+        "en": "My relationship with the neighbors at my new home is good."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["長年", "ながねん"],
+          ["の", ""],
+          ["丁寧", "ていねい"],
+          ["な", ""],
+          ["手入", "てい"],
+          ["れのおかげで、この", ""],
+          ["古", "ふる"],
+          ["い", ""],
+          ["家具", "かぐ"],
+          ["は", ""],
+          ["今", "いま"],
+          ["も", ""],
+          ["良好", "りょうこう"],
+          ["な", ""],
+          ["状態", "じょうたい"],
+          ["を", ""],
+          ["保", "たも"],
+          ["っている。", ""]
+        ],
+        "en": "Thanks to years of careful maintenance, this old piece of furniture remains in excellent condition."
+      },
+      {
+        "segments": [
+          ["季節", "きせつ"],
+          ["の", ""],
+          ["変", "か"],
+          ["わり", ""],
+          ["目", "め"],
+          ["でも、この", ""],
+          ["地域", "ちいき"],
+          ["の", ""],
+          ["農作物", "のうさくもつ"],
+          ["は", ""],
+          ["生育", "せいいく"],
+          ["が", ""],
+          ["良好", "りょうこう"],
+          ["で、", ""],
+          ["豊", "ゆた"],
+          ["かな", ""],
+          ["収穫", "しゅうかく"],
+          ["が", ""],
+          ["期待", "きたい"],
+          ["できる。", ""]
+        ],
+        "en": "Even through the change of seasons, the crops in this region are growing well, and a bountiful harvest is expected."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["物事", "ものごと"],
+      ["の", ""],
+      ["状態", "じょうたい"],
+      ["がよく、", ""],
+      ["安心", "あんしん"],
+      ["できることを", ""],
+      ["表", "あらわ"],
+      ["します。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
