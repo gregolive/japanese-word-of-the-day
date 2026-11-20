@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-22",
+  "word": {
+    "text": "増す",
+    "reading": "ます",
+    "pos": [
+      "Godan verb"
+    ],
+    "jlpt": "N3",
+    "jmdict_id": 1403120
+  },
+  "definition_en": "to increase; to grow",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["毎日", "まいにち"],
+          ["暑", "あつ"],
+          ["さが", ""],
+          ["増", "ま"],
+          ["しています。", ""]
+        ],
+        "en": "The heat is increasing every day."
+      },
+      {
+        "segments": [
+          ["最近", "さいきん"],
+          ["、", ""],
+          ["仕事", "しごと"],
+          ["の", ""],
+          ["量", "りょう"],
+          ["が", ""],
+          ["増", "ま"],
+          ["しました。", ""]
+        ],
+        "en": "Recently, my amount of work has increased."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["雨足", "あめあし"],
+          ["が", ""],
+          ["増", "ま"],
+          ["してきたので、", ""],
+          ["急", "いそ"],
+          ["いで", ""],
+          ["家", "いえ"],
+          ["に", ""],
+          ["帰", "かえ"],
+          ["った。", ""]
+        ],
+        "en": "The rain had grown heavier, so I hurried home."
+      },
+      {
+        "segments": [
+          ["祭", "まつ"],
+          ["りが", ""],
+          ["近", "ちか"],
+          ["づき、", ""],
+          ["通", "とお"],
+          ["りの", ""],
+          ["人出", "ひとで"],
+          ["がさらに", ""],
+          ["増", "ま"],
+          ["している。", ""]
+        ],
+        "en": "As the festival approaches, the crowds on the street are growing even larger."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["練習", "れんしゅう"],
+          ["を", ""],
+          ["重", "かさ"],
+          ["ねるにつれ、", ""],
+          ["選手", "せんしゅ"],
+          ["たちの", ""],
+          ["自信", "じしん"],
+          ["は", ""],
+          ["確実", "かくじつ"],
+          ["に", ""],
+          ["増", "ま"],
+          ["していった。", ""]
+        ],
+        "en": "As the players repeated their practice, their confidence steadily grew."
+      },
+      {
+        "segments": [
+          ["季節", "きせつ"],
+          ["が", ""],
+          ["移", "うつ"],
+          ["ろうにつれ、", ""],
+          ["夜", "よる"],
+          ["の", ""],
+          ["冷", "ひ"],
+          ["え", ""],
+          ["込", "こ"],
+          ["みはいっそう", ""],
+          ["増", "ま"],
+          ["してきた。", ""]
+        ],
+        "en": "As the season turned, the chill of the nights deepened further."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["数", "かず"],
+      ["や", ""],
+      ["量", "りょう"],
+      ["が", ""],
+      ["前", "まえ"],
+      ["より", ""],
+      ["多", "おお"],
+      ["くなることです。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
