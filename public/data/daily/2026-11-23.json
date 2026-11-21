@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-23",
+  "word": {
+    "text": "シート",
+    "reading": "シート",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N1",
+    "jmdict_id": 1059450
+  },
+  "definition_en": "seat",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["車", "くるま"],
+          ["のシートは、とてもやわらかいです。", ""]
+        ],
+        "en": "The car seat is very soft."
+      },
+      {
+        "segments": [
+          ["電車", "でんしゃ"],
+          ["のシートにすわりました。", ""]
+        ],
+        "en": "I sat down on the train seat."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["飛行機", "ひこうき"],
+          ["のシートを", ""],
+          ["倒", "たお"],
+          ["して、", ""],
+          ["少", "すこ"],
+          ["し", ""],
+          ["休", "やす"],
+          ["みました。", ""]
+        ],
+        "en": "I reclined my airplane seat and rested for a while."
+      },
+      {
+        "segments": [
+          ["映画", "えいが"],
+          ["館", "かん"],
+          ["で、", ""],
+          ["真", "ま"],
+          ["ん", ""],
+          ["中", "なか"],
+          ["のシートを", ""],
+          ["予約", "よやく"],
+          ["しておきました。", ""]
+        ],
+        "en": "I reserved a seat in the middle of the movie theater ahead of time."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["座席", "ざせき"],
+          ["の", ""],
+          ["幅", "はば"],
+          ["が", ""],
+          ["狭", "せま"],
+          ["いシートは、", ""],
+          ["長時間", "ちょうじかん"],
+          ["の", ""],
+          ["移動", "いどう"],
+          ["において", ""],
+          ["身体", "しんたい"],
+          ["的", "てき"],
+          ["な", ""],
+          ["負担", "ふたん"],
+          ["が", ""],
+          ["大", "おお"],
+          ["きい。", ""]
+        ],
+        "en": "Seats with narrow widths place a heavy physical burden on the body during long journeys."
+      },
+      {
+        "segments": [
+          ["最新", "さいしん"],
+          ["型", "がた"],
+          ["の", ""],
+          ["車", "くるま"],
+          ["のシートは、", ""],
+          ["人間", "にんげん"],
+          ["工学", "こうがく"],
+          ["に", ""],
+          ["基", "もと"],
+          ["づいて", ""],
+          ["丁寧", "ていねい"],
+          ["に", ""],
+          ["設計", "せっけい"],
+          ["されている。", ""]
+        ],
+        "en": "The seats of the latest model cars are carefully designed based on ergonomic principles."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["車", "くるま"],
+      ["や", ""],
+      ["電車", "でんしゃ"],
+      ["などで、", ""],
+      ["人", "ひと"],
+      ["がすわるための", ""],
+      ["場所", "ばしょ"],
+      ["です。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
