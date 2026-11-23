@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-25",
+  "word": {
+    "text": "安静",
+    "reading": "あんせい",
+    "pos": ["Noun", "Na-adjective"],
+    "jlpt": "N1",
+    "jmdict_id": 1153910
+  },
+  "definition_en": "rest; quiet; repose",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["走", "はし"],
+          ["ったあとは、", ""],
+          ["体", "からだ"],
+          ["を", ""],
+          ["安静", "あんせい"],
+          ["にしてください。", ""]
+        ],
+        "en": "After running, please keep your body still and rest."
+      },
+      {
+        "segments": [
+          ["体", "からだ"],
+          ["が", ""],
+          ["疲", "つか"],
+          ["れたときは、", ""],
+          ["安静", "あんせい"],
+          ["にすることが", ""],
+          ["大切", "たいせつ"],
+          ["です。", ""]
+        ],
+        "en": "When your body is tired, it is important to keep still and rest."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["激", "はげ"],
+          ["しい", ""],
+          ["運動", "うんどう"],
+          ["の", ""],
+          ["後", "のち"],
+          ["は、しばらく", ""],
+          ["安静", "あんせい"],
+          ["にしているのが", ""],
+          ["望", "のぞ"],
+          ["ましい。", ""]
+        ],
+        "en": "After intense exercise, it is best to keep still and rest for a while."
+      },
+      {
+        "segments": [
+          ["長時間", "ちょうじかん"],
+          ["の", ""],
+          ["移動", "いどう"],
+          ["の", ""],
+          ["後", "のち"],
+          ["は、なるべく", ""],
+          ["安静", "あんせい"],
+          ["にして", ""],
+          ["体力", "たいりょく"],
+          ["の", ""],
+          ["回復", "かいふく"],
+          ["を", ""],
+          ["待", "ま"],
+          ["つのがよい。", ""]
+        ],
+        "en": "After a long journey, it is best to rest as much as possible and wait for your strength to return."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["過度", "かど"],
+          ["の", ""],
+          ["運動", "うんどう"],
+          ["で", ""],
+          ["疲弊", "ひへい"],
+          ["した", ""],
+          ["筋肉", "きんにく"],
+          ["には、まず", ""],
+          ["安静", "あんせい"],
+          ["を", ""],
+          ["与", "あた"],
+          ["えることが", ""],
+          ["回復", "かいふく"],
+          ["への", ""],
+          ["近道", "ちかみち"],
+          ["である。", ""]
+        ],
+        "en": "For muscles worn out by excessive exercise, giving them rest first is the quickest route to recovery."
+      },
+      {
+        "segments": [
+          ["長", "なが"],
+          ["い", ""],
+          ["登山", "とざん"],
+          ["の", ""],
+          ["後", "のち"],
+          ["、", ""],
+          ["彼", "かれ"],
+          ["は", ""],
+          ["山小屋", "やまごや"],
+          ["で", ""],
+          ["身体", "しんたい"],
+          ["を", ""],
+          ["安静", "あんせい"],
+          ["に", ""],
+          ["横", "よこ"],
+          ["たえ、", ""],
+          ["張", "は"],
+          ["りつめた", ""],
+          ["神経", "しんけい"],
+          ["をほどいた。", ""]
+        ],
+        "en": "After the long climb, he lay still in the mountain hut and let his tense nerves loosen."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["体", "からだ"],
+      ["を", ""],
+      ["動", "うご"],
+      ["かさず、", ""],
+      ["休", "やす"],
+      ["ませておくこと。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
