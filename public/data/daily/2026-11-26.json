@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-26",
+  "word": {
+    "text": "一定",
+    "reading": "いってい",
+    "pos": [
+      "Suru verb"
+    ],
+    "jlpt": "N2",
+    "jmdict_id": 1164950
+  },
+  "definition_en": "constant; definite; uniform; defined",
+  "glosses": [
+    "to fix",
+    "to settle",
+    "to standardize",
+    "to regularize"
+  ],
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["毎朝", "まいあさ"],
+          ["、", ""],
+          ["一定", "いってい"],
+          ["の", ""],
+          ["時間", "じかん"],
+          ["に", ""],
+          ["起", "お"],
+          ["きます。", ""]
+        ],
+        "en": "I get up at the same time every morning."
+      },
+      {
+        "segments": [
+          ["お", ""],
+          ["湯", "ゆ"],
+          ["の", ""],
+          ["温度", "おんど"],
+          ["が", ""],
+          ["一定", "いってい"],
+          ["です。", ""]
+        ],
+        "en": "The temperature of the hot water is steady."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["毎月", "まいつき"],
+          ["、", ""],
+          ["一定", "いってい"],
+          ["の", ""],
+          ["金額", "きんがく"],
+          ["を", ""],
+          ["貯金", "ちょきん"],
+          ["するように", ""],
+          ["心", "こころ"],
+          ["がけている。", ""]
+        ],
+        "en": "I try to save a fixed amount of money every month."
+      },
+      {
+        "segments": [
+          ["車", "くるま"],
+          ["の", ""],
+          ["速度", "そくど"],
+          ["を", ""],
+          ["一定", "いってい"],
+          ["に", ""],
+          ["保", "たも"],
+          ["つと、", ""],
+          ["燃費", "ねんぴ"],
+          ["が", ""],
+          ["良", "よ"],
+          ["くなるそうだ。", ""]
+        ],
+        "en": "I hear that keeping a car at a steady speed improves fuel efficiency."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["通勤", "つうきん"],
+          ["電車", "でんしゃ"],
+          ["は、", ""],
+          ["一定", "いってい"],
+          ["の", ""],
+          ["間隔", "かんかく"],
+          ["で", ""],
+          ["発車", "はっしゃ"],
+          ["するよう", ""],
+          ["厳密", "げんみつ"],
+          ["に", ""],
+          ["管理", "かんり"],
+          ["されている。", ""]
+        ],
+        "en": "The commuter trains are strictly managed so that they depart at regular intervals."
+      },
+      {
+        "segments": [
+          ["彼", "かれ"],
+          ["は", ""],
+          ["一定", "いってい"],
+          ["の", ""],
+          ["距離", "きょり"],
+          ["を", ""],
+          ["保", "たも"],
+          ["ちながら、", ""],
+          ["慎重", "しんちょう"],
+          ["に", ""],
+          ["相手", "あいて"],
+          ["の", ""],
+          ["出方", "でかた"],
+          ["をうかがっていた。", ""]
+        ],
+        "en": "He kept a consistent distance while cautiously watching how the other person would respond."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["いつも", ""],
+      ["同", "おな"],
+      ["じで、", ""],
+      ["変", "か"],
+      ["わらないことです。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
