@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-27",
+  "word": {
+    "text": "煮える",
+    "reading": "にえる",
+    "pos": [
+      "Ichidan verb"
+    ],
+    "jlpt": "N3",
+    "jmdict_id": 1322490
+  },
+  "definition_en": "to be boiled; to be cooked",
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["なべの", ""],
+          ["中", "なか"],
+          ["で、", ""],
+          ["野菜", "やさい"],
+          ["がよく", ""],
+          ["煮", "に"],
+          ["えました。", ""]
+        ],
+        "en": "The vegetables were cooked well in the pot."
+      },
+      {
+        "segments": [
+          ["まだ、おにくが", ""],
+          ["煮", "に"],
+          ["えていません。", ""]
+        ],
+        "en": "The meat is not cooked yet."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["じゃがいもが", ""],
+          ["柔", "やわ"],
+          ["らかく", ""],
+          ["煮", "に"],
+          ["えるまで、", ""],
+          ["弱火", "よわび"],
+          ["で", ""],
+          ["待", "ま"],
+          ["ちましょう。", ""]
+        ],
+        "en": "Let's wait on low heat until the potatoes are soft and cooked through."
+      },
+      {
+        "segments": [
+          ["スープがぐつぐつ", ""],
+          ["煮", "に"],
+          ["えて、いい", ""],
+          ["香", "かお"],
+          ["りがしてきた。", ""]
+        ],
+        "en": "The soup bubbled and started to smell good."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["じっくりと", ""],
+          ["煮", "に"],
+          ["えた", ""],
+          ["根菜", "こんさい"],
+          ["は、ほろほろと", ""],
+          ["崩", "くず"],
+          ["れるほど", ""],
+          ["柔", "やわ"],
+          ["らかかった。", ""]
+        ],
+        "en": "The root vegetables, simmered until tender, were so soft they crumbled."
+      },
+      {
+        "segments": [
+          ["鍋", "なべ"],
+          ["の", ""],
+          ["底", "そこ"],
+          ["で", ""],
+          ["具", "ぐ"],
+          ["材", "ざい"],
+          ["が", ""],
+          ["静", "しず"],
+          ["かに", ""],
+          ["煮", "に"],
+          ["える", ""],
+          ["音", "おと"],
+          ["を", ""],
+          ["聞", "き"],
+          ["きながら、", ""],
+          ["台所", "だいどころ"],
+          ["には", ""],
+          ["懐", "なつ"],
+          ["かしい", ""],
+          ["匂", "にお"],
+          ["いが", ""],
+          ["満", "み"],
+          ["ちていた。", ""]
+        ],
+        "en": "As the ingredients slowly simmered at the bottom of the pot, the kitchen filled with a nostalgic aroma."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["食", "た"],
+      ["べ", ""],
+      ["物", "もの"],
+      ["が、お", ""],
+      ["湯", "ゆ"],
+      ["や", ""],
+      ["火", "ひ"],
+      ["で", ""],
+      ["熱", "あつ"],
+      ["くなり、", ""],
+      ["食", "た"],
+      ["べられるようになることです。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
