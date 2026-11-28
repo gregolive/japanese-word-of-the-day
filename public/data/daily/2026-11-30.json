@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-30",
+  "word": {
+    "text": "バンド",
+    "reading": "バンド",
+    "pos": [
+      "Noun"
+    ],
+    "jlpt": "N2",
+    "jmdict_id": 1100240
+  },
+  "definition_en": "band (group of musicians)",
+  "glosses": [
+    "band (material)",
+    "strap",
+    "(watch) bracelet",
+    "belt (clothing)"
+  ],
+  "sentences": {
+    "beginner": [
+      {
+        "segments": [
+          ["友達", "ともだち"],
+          ["はバンドで", ""],
+          ["歌", "うた"],
+          ["っています。", ""]
+        ],
+        "en": "My friend sings in a band."
+      },
+      {
+        "segments": [
+          ["私", "わたし"],
+          ["のバンドは", ""],
+          ["毎週", "まいしゅう"],
+          ["土曜日", "どようび"],
+          ["に", ""],
+          ["練習", "れんしゅう"],
+          ["します。", ""]
+        ],
+        "en": "My band practices every Saturday."
+      }
+    ],
+    "intermediate": [
+      {
+        "segments": [
+          ["大学", "だいがく"],
+          ["の", ""],
+          ["友達", "ともだち"],
+          ["と", ""],
+          ["一緒", "いっしょ"],
+          ["にバンドを", ""],
+          ["作", "つく"],
+          ["りました。", ""]
+        ],
+        "en": "I formed a band with my university friends."
+      },
+      {
+        "segments": [
+          ["週末", "しゅうまつ"],
+          ["はライブハウスでバンドの", ""],
+          ["演奏", "えんそう"],
+          ["を", ""],
+          ["聴", "き"],
+          ["くのが", ""],
+          ["好", "す"],
+          ["きです。", ""]
+        ],
+        "en": "On weekends, I like listening to bands perform at live houses."
+      }
+    ],
+    "advanced": [
+      {
+        "segments": [
+          ["彼", "かれ"],
+          ["らは", ""],
+          ["学生", "がくせい"],
+          ["時代", "じだい"],
+          ["に", ""],
+          ["結成", "けっせい"],
+          ["したバンドで、", ""],
+          ["今", "いま"],
+          ["では", ""],
+          ["海外", "かいがい"],
+          ["のフェスにも", ""],
+          ["招", "まね"],
+          ["かれるほどの", ""],
+          ["人気", "にんき"],
+          ["を", ""],
+          ["得", "え"],
+          ["ている。", ""]
+        ],
+        "en": "The band they formed in their student days has now gained enough popularity to be invited to festivals overseas."
+      },
+      {
+        "segments": [
+          ["音楽", "おんがく"],
+          ["性", "せい"],
+          ["の", ""],
+          ["違", "ちが"],
+          ["いからバンドの", ""],
+          ["解散", "かいさん"],
+          ["を", ""],
+          ["決", "き"],
+          ["めたメンバーたちは、", ""],
+          ["最後", "さいご"],
+          ["のライブで", ""],
+          ["静", "しず"],
+          ["かに", ""],
+          ["別", "わか"],
+          ["れを", ""],
+          ["惜", "お"],
+          ["しんだ。", ""]
+        ],
+        "en": "Over differences in musical direction, the members who had decided to disband the band quietly lamented their parting at the final live show."
+      }
+    ]
+  },
+  "definition_ja": {
+    "segments": [
+      ["一緒", "いっしょ"],
+      ["に", ""],
+      ["音楽", "おんがく"],
+      ["をする", ""],
+      ["人", "ひと"],
+      ["たちのグループです。", ""]
+    ],
+    "source": "ai"
+  },
+  "generated_by": {
+    "model": "claude-haiku-5-5",
+    "verified": true,
+    "reviewed": true
+  }
+}
